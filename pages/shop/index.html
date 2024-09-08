@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deadlock Shop</title>
+	<link rel="stylesheet" type="text/css" href="/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="/css/citadel_hud_hero_shop.css" />
+	<link rel="stylesheet" type="text/css" href="/css/citadel_shop_mods_list.css" />
+	<link rel="stylesheet" type="text/css" href="/css/citadel_shop_mods_tier.css" />
+	<link rel="stylesheet" type="text/css" href="/css/ability_icons.css" />
+	<link rel="stylesheet" type="text/css" href="/css/citadel_shop_mod_view.css" />
+</head>
+<body>
+	<div data-class="CitadelHudHeroShop" class="CitadelHudHeroShop gShopOpen isShowingTrainingPage">
+		<div data-id="Shop">
+			<div data-id="NavPanel" class="TopBottomFlow">
+				<div data-id="ShopNav">
+					<div class="ShopHeader">
+						<div class="ShopName"></div>
+					</div>
+					<div class="ReadOnlyShop">
+						<span class="ReadOnlyTitle">Browse Items</span>
+						<span class="ReadOnlyDesc">Browse through the item catalog to get yourself ready for your next match!</span>
+					</div>
+				</div>
+			</div>
+			<div data-id="MainPanel" class="showingWeapon">
+				<div data-id="ShopModsContainer" class="TopBottomFlow">
+					<div data-id="ShopNavigation">
+						<div data-id="WeaponNav" class="NavigationButton">
+							<div class="NavHeaderColor"></div>
+							<div class="NavIconContainer LeftRightFlow">
+								<div class="NavCategoryIcon"></div>
+								<span class="NavLabel">Weapon</span>
+							</div>
+						</div>
+						<div data-id="ArmorNav" class="NavigationButton">
+							<div class="NavHeaderColor"></div>
+							<div class="NavIconContainer LeftRightFlow">
+								<div class="NavCategoryIcon"></div>
+								<span class="NavLabel">Vitality</span>
+							</div>
+						</div>
+						<div data-id="TechNav" class="NavigationButton">
+							<div class="NavHeaderColor"></div>
+							<div class="NavIconContainer LeftRightFlow">
+								<div class="NavCategoryIcon"></div>
+								<span class="NavLabel">Spirit</span>
+							</div>
+						</div>
+					</div>
+					<script>
+						const panel = document.querySelector("[data-id=MainPanel]");
+						document.querySelectorAll(".NavigationButton").forEach(el => {
+							el.addEventListener("click", function(){
+								panel.className = "showing" + this.dataset.id.replace("Nav", "");
+							}, false)
+						});
+					</script>
+					<div data-id="ShopModListsContainer">
+						<!-- <span class="HeroFavoritesHeaderLabel">{s:hero_name}'s Recommended Mods</span> -->
+						<div data-class="CitadelShopModsList" data-id="ShopModsListWeapon" category="Weapon">
+							<div data-class="CitadelShopModsTier" class="ModTier1">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">500</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isWeapon clipSize">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Basic Magazine</span>
+													</div>
+													<div class="modStatusCol recommended">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier2">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">1,250</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isWeapon isActiveItem fleetfootBoots">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Fleetfoot</span>
+													</div>
+													<div class="modStatusCol owned">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier3">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">3,000</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isWeapon headhunter New">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Headhunter</span>
+													</div>
+													<div class="modStatusCol">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer">
+														<div class="componentModIconContainer isWeaponComponent">
+															<div data-id="componentModIcon" style="mask-image: url(/panorama/images/upgrades/mods_weapon/high_velocity_mag_psd.png)"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div data-class="CitadelShopMod" class="mod_view isWeapon pointBlank">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Point Blank</span>
+													</div>
+													<div class="modStatusCol">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer">
+														<div class="componentModIconContainer isWeaponComponent">
+															<div data-id="componentModIcon" style="mask-image: url(/panorama/images/upgrades/mods_weapon/close_range_psd.png)"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier4">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">6,300</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isWeapon isActiveItem empBullets">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Silencer</span>
+													</div>
+													<div class="modStatusCol">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer">
+														<div class="componentModIconContainer isWeaponComponent">
+															<div data-id="componentModIcon" style="mask-image: url(/panorama/images/upgrades/mods_weapon/slowing_bullets_psd.png)"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-class="CitadelShopModsList" data-id="ShopModsListArmor" category="Armor">
+							<div data-class="CitadelShopModsTier" class="ModTier1">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">500</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isArmor improvedStamina">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Extra Stamina</span>
+													</div>
+													<div class="modStatusCol">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span data-id="NewLabel" class="new_tag">New</span>
+													<div data-id="ComponentsContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier2">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">1,250</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier3">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">3,000</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier4">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">6,300</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-class="CitadelShopModsList" data-id="ShopModsListTech" category="Tech">
+							<div data-class="CitadelShopModsTier" class="ModTier1">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">500</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer">
+											<div data-class="CitadelShopMod" class="mod_view isTech techPower">
+												<div data-id="background" hittestchildren="false">
+													<div class="mod_backer"></div>
+													<div class="modIconContainer">
+														<div class="mod_icon"></div>
+														<div class="defensive_icon"></div>
+													</div>
+													<div class="active_tag">
+														<span data-id="ActiveTag">Active</span>
+													</div>
+													<div class="mod_name_area">
+														<span class="modName">Extra Spirit</span>
+													</div>
+													<div class="modStatusCol">
+														<img class="recommended_icon" src="/panorama/images/upgrades/recommended_star_psd.png" />
+													</div>
+													<span class="new_tag">New</span>
+													<div data-id="ComponentsContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier2">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">1,250</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier3">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">3,000</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+							<div data-class="CitadelShopModsTier" class="ModTier4">
+								<div data-id="GoldAndModsContainer">
+									<div data-id="GoldCostContainer" class="LeftRightFlow">
+										<div class="goldContain">
+											<div class="goldIcon"></div>
+											<span class="goldCost">6,300</span>
+											<span class="goldCost componentPlus">+</span>
+										</div>
+									</div>
+									<div data-id="PassiveMods" class="ModsContainer">
+										<div data-id="PassiveModsContainer"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

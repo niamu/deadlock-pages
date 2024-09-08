@@ -1,0 +1,215 @@
+/* Prettified by Source 2 Viewer 10.2.0.0 - https://valveresourceformat.github.io */
+
+:root {
+	--ModTierTopPadding: 10px;
+	--ModTierBottomPadding: 20px;
+}
+
+[data-class=CitadelShopModsTier] {
+	display: flex;
+	width: 1060px;
+	opacity: 1;
+	padding: 14px 0px;
+	transition-property: brightness, background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+}
+
+.AspectRatio16x10 [data-class=CitadelShopModsTier] {
+	width: 1069px;
+}
+
+[data-class=CitadelShopModsTier]:hover {
+	opacity: 1;
+	wash-color: none;
+	z-index: 2;
+	background-color: #ffffff05;
+}
+
+.ModTier2,.ModTier4 {
+	background-color: #00000050;
+}
+
+.ModTier2:hover,.ModTier4:hover {
+	background-color: #ffffff05;
+}
+
+.showingWeapon [data-class=CitadelShopModsTier]:hover {
+	background-color: color-mix(in srgb, var(--courageBrightColor) 20%, transparent);
+}
+
+.showingArmor [data-class=CitadelShopModsTier]:hover {
+	background-color: color-mix(in srgb, var(--fortitudeBrightColor) 20%, transparent);
+}
+
+.showingTech [data-class=CitadelShopModsTier]:hover {
+	background-color: color-mix(in srgb, var(--spiritBrightColor) 20%, transparent);
+}
+
+.showingFavorites [data-class=CitadelShopModsTier]:hover {
+	background-color: #ffe76030;
+}
+
+.showingFavorites [data-class=CitadelShopModsTier] {
+	padding: 20px 0px;
+}
+
+#ModTier1 {
+	padding-top: 20px;
+}
+
+.RelatedItemInOtherTier .ModsContainer CitadelShopMod {
+	opacity: 0.5;
+	filter: brightness(0.5);
+}
+
+.RelatedItemInOtherTier .ModsContainer CitadelShopMod:hover {
+	opacity: 1;
+	filter: brightness(1);
+}
+
+.RelatedItemInOtherTier .ModsContainer CitadelShopMod.HoveredItemIsComponent {
+	opacity: 1;
+	animation-name: itemUpgradeAvailable;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+.RelatedItemInOtherTier .ModsContainer CitadelShopMod.HoveredItemIsUpgrade {
+	wash-color: white;
+	pre-transform-scale2d: 1.05;
+	opacity: 1;
+	filter: brightness(2);
+}
+
+@keyframes itemUpgradeAvailable {
+	0%
+	{
+		pre-transform-scale2d: 1;
+		filter: brightness(1);
+	}
+	
+	50%
+	{
+		pre-transform-scale2d: 1.05;
+		filter: brightness(1.5);
+	}
+	
+	100%
+	{
+		pre-transform-scale2d: 1;
+		filter: brightness(1);
+	}
+	
+}
+
+[data-class=CitadelShopModsTier] {
+	filter: brightness(1);
+}
+
+.shopClosed [data-class=CitadelShopModsTier] {
+	wash-color: #00000090;
+}
+
+[data-class=CitadelShopModsTier]:hover [data-id=GoldCostContainer] {
+	transition: background-color 0.5s ease-in-out 0s;
+}
+
+[data-class=CitadelShopModsTier]:hover [data-id=GoldAndModsContainer] {
+	filter: brightness(1.35);
+	transition: brightness 0.5s ease-in-out 0.0s;
+}
+
+[data-class=CitadelShopModsTier]:hover .tierBonusContainer {
+	transition: opacity 0.15s ease-in-out 0.0s;
+	opacity: 1;
+}
+
+[data-id=GoldAndModsContainer] {
+	width: 100%;
+	filter: brightness(1);
+	transition: brightness 0.15s ease-in-out 0.0s;
+	wash-color: #00000020;
+	display: flex;
+}
+
+[data-id=PassiveMods] {
+	width: 100%;
+	opacity: 1;
+	filter: brightness(1);
+	pre-transform-scale2d: 1;
+	transition-property: pre-transform-scale2d, background-color;
+	transition-duration: 0.15s;
+}
+
+.showingWeapon [data-class=CitadelShopModsTier]:hover [data-id=GoldAndModsContainer] {
+	wash-color: #00000000;
+}
+
+[data-class=CitadelShopModsTier]:hover [data-id=PassiveMods] {
+	blur: gaussian(0.0);
+	filter: brightness(1);
+	opacity: 1;
+	pre-transform-scale2d: 1;
+}
+
+[data-id=GoldCostContainer] {
+	opacity: 0.5;
+	vertical-align: middle;
+	horizontal-align: center;
+	display: flex;
+	transition: background-color 0.15s ease-in-out 0s;
+	margin: 0%;
+	min-height: 100px;
+	width: 60px;
+}
+
+[data-class=CitadelShopModsTier]:hover [data-id=GoldCostContainer] {
+	opacity: 1;
+}
+
+.goldContain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	transform: rotateZ( -90deg );
+	transform-origin: 50% 50%;
+}
+
+[data-id=PassiveMods] {
+	vertical-align: middle;
+}
+
+[data-id=PassiveModsContainer] {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.goldIcon {
+	vertical-align: center;
+	opacity: 1;
+	margin-right: 5px;
+	width: 12px;
+	height: 22px;
+}
+
+.goldCost {
+	color: var(--shardColor);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.componentPlus {
+	margin-top: 2px;
+	margin-left: 2px;
+	display: none;
+}
+
+.ModTier3 .componentPlus,.ModTier4 .componentPlus {
+	display: block;
+}

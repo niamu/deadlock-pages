@@ -1,0 +1,1325 @@
+/* Prettified by Source 2 Viewer 10.2.0.0 - https://valveresourceformat.github.io */
+
+:root {
+	--citadelBuildsColorLightBlue: #4D7EC8;
+	--citadelBuildsColorDarkBlue: #3767AE;
+	--citadelBuildsColorBackgroundGray: #616161;
+	--citadelBuildsColorContainerBackground: #61616199;
+	--citadelBuildsColorInnerGray: #D9D9D926;
+
+	--rightPanelWidth: 1160px;
+}
+
+[data-class=CitadelHudHeroShop] {
+	width: 100%;
+	height: 100%;
+	color: var(--colorCommonOffWhite);
+	background-color: #060e00ee;
+}
+
+[data-class=CitadelHudHeroShop].gBrowsingBuilds {
+	background-color: #202020f6;
+}
+
+[data-class=CitadelHudHeroShop].gEditingBuilds {
+	background-color: #12305df6;
+}
+
+[data-id=Shop] {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.AspectRatio21x9 [data-id=Shop] {
+	width: 1920px;
+	horizontal-align: center;
+}
+
+[data-id=NavPanel] {
+	height: 100%;
+	width: 640px;
+	flex-shrink: 0;
+}
+
+.AspectRatio16x10 [data-id=NavPanel] {
+	margin-right: 20px;
+}
+
+#ModBarGraphContainer {
+	height: 70px;
+	background-color: #ffffff05;
+}
+
+#ModBarGraph {
+	margin: 0px 10px;
+	vertical-align: center;
+}
+
+[data-id=ShopNav] {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 60px;
+	padding-right: 70px;
+}
+
+#HeroScenePanel {
+	width: 90%;
+	height: 70%;
+	ignore-parent-flow: true;
+	margin-bottom: 200px;
+	mask-image: linear-gradient(to bottom, #ffffff 60%, #ffffff00 );
+}
+
+#HeroScenePanel {
+	horizontal-align: center;
+	vertical-align: bottom;
+}
+
+#HeroScenePanel Label {
+	horizontal-align: center;
+	vertical-align: center;
+	font-weight: bold;
+	margin-bottom: 200px;
+}
+
+@keyframes 'navAnimateIn' {
+	0%
+	{
+		transform: translate3d( -500px, 0px, 0px );
+		opacity: 0.1;
+	}
+	
+	100%
+	{
+		transform: translate3d( 0px, 0px, 0px );
+		opacity: 1;
+	}
+	
+}
+
+.ShopHeader {
+	width: 100%;
+	display: flex;
+}
+
+.ShopName {
+	width: 280px;
+	height: 100px;
+	margin: 40px 20px 0 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-image: url("/panorama/images/shop/shop_logo_psd.png");
+}
+
+#GoldAPContainer {
+	vertical-align: bottom;
+	margin-bottom: 20px;
+}
+
+.ModsPurchasedContainer {
+	width: 100%;
+	display: flex;
+	ignore-parent-flow: true;
+	vertical-align: bottom;
+	margin-bottom: 90px;
+}
+
+.UniversalSlotsLabel {
+	color: #676767;
+	horizontal-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.UniversalSlotsContainer {
+	vertical-align: center;
+}
+
+.UniversalSlotsTopMargin {
+	margin-top: 17px;
+}
+
+.mod_universal {
+	width: 50px;
+	vertical-align: center;
+	margin: 0px 0px;
+}
+
+.mod_universal_locked {
+	width: 100px;
+	height: 80px;
+	vertical-align: center;
+	margin: 0px 0px;
+}
+
+.ShopModsContainer {
+	background-color: #333333;
+	padding: 10px 10px;
+	horizontal-align: middle;
+}
+
+#SecondaryPanel {
+	width: 100%;
+	display: flex;
+	horizontal-align: center;
+}
+
+#PinnedMods {
+	width: 95%;
+	min-height: 100px;
+	margin: 5px 0px;
+	flow-children: down;
+	background-color: #333;
+	opacity: 0.3;
+}
+
+.PinnedLabel {
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 0.3;
+	padding-top: 25px;
+}
+
+.UnavailableLabel {
+	margin-left: 30px;
+	font-weight: medium;
+	font-size: 16px;
+	font-style: italic;
+	opacity: 0.3;
+}
+
+#SearchContainer {
+	horizontal-align: right;
+	flow-children: down;
+	background-color: #CBBCA6;
+	width: 240px;
+}
+
+#SearchContainer #SearchBox {
+	padding: 0px;
+}
+
+#SearchContainer #SearchTextEntry {
+	text-align: center;
+	background-color: #333;
+	border-radius: 3px;
+	border: 3px solid silvered&20;
+	height: 50px;
+	padding: 10px 0px 15px 10px;
+}
+
+#SearchContainer #SearchTextEntry > #PlaceholderText {
+	vertical-align: middle;
+	font-weight: medium;
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+#SearchContainer #ClearSearchButton {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	visibility: visible;
+	background-size: auto 50%;
+	background-position: center;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-image: url("/panorama/images/icons/icon_x.svg");
+	horizontal-align: right;
+	opacity: 0.3;
+	transition-property: opacity, pre-transform-scale2d;
+	transition-duration: 0.3s;
+}
+
+#SearchContainer #ClearSearchButton:hover {
+	opacity: 0.7;
+	pre-transform-scale2d: 1.2;
+}
+
+#SearchContainer .ShowSearchResults #ClearSearchButton {
+	visibility: visible;
+}
+
+#SearchExamples {
+	ignore-parent-flow: true;
+	vertical-align: top;
+	horizontal-align: right;
+	flow-children: down;
+	margin-top: 70px;
+	padding: 8px;
+	background-color: #333;
+	width: 340px;
+	border-radius: 5px 0px 5px 5px;
+	opacity: 0;
+	transition-property: transform, opacity;
+}
+
+.ShowSearchExamples #SearchExamples {
+	opacity: 1;
+}
+
+#SearchExamples > Label {
+	padding: 4px;
+	opacity: 0.5;
+	font-size: 17px;
+	font-weight: medium;
+}
+
+#SearchExamples > Label .highlight {
+	color: var(--offWhite);
+	font-weight: bold;
+}
+
+#SearchExamples > Label .highlight_weapon {
+	color: courageBrightColor;
+	font-weight: bold;
+}
+
+#SearchExamples > Label .highlight_vitality {
+	color: fortitudeBrightColor;
+	font-weight: bold;
+}
+
+#SearchExamples > Label .highlight_spirit {
+	color: spiritBrightColor;
+	font-weight: bold;
+}
+
+#AbilitiesButton {
+	width: 100%;
+	margin-top: 10px;
+	background-color: var(--offBlack);
+	flow-children: down;
+	transition-property: background-color, brightness, transform;
+	transition-duration: 0.2s;
+}
+
+#AbilitiesTitleContainer {
+	flow-children: down;
+	horizontal-align: center;
+	margin-top: 40px;
+}
+
+.APHeader {
+	width: 100%;
+	padding-top: 0px;
+	margin-bottom: 10px;
+}
+
+.SectionTitle {
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.SectionLabel {
+	font-size: 22px;
+	font-weight: bold;
+	color: #ffffff60;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.APTitle {
+	flow-children: down;
+	width: 50%;
+	margin: 30px 30px 20px 30px;
+}
+
+.EnhanceLabel {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	opacity: 0.5;
+	horizontal-align: left;
+	font-size: 16px;
+	margin-bottom: -4px;
+}
+
+.AbilitiesTitleArea {
+	width: 100%;
+}
+
+.AbilitiesContentArea {
+	flow-children: down;
+	width: 100%;
+}
+
+.AbilitiesLabel {
+	horizontal-align: left;
+	vertical-align: center;
+	font-family: "Swear Text Demo";
+	font-size: 34px;
+	font-weight: bold;
+	color: var(--offWhite);
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+#AbilitiesIconContainer {
+	width: 100%;
+	background-color: #7f7088;
+	width: 95%;
+	display: flex;
+	margin: 20px 0px;
+	background-color: linear-gradient(2% 0%, 2.1% 0%, #7f7088, #605865 );
+	transition-property: width, background-color, brightness, transform;
+	transition-duration: 0.2s;
+}
+
+#AbilitiesIconContainer:hover {
+	brightness: 1.5;
+	transform: translateY(-3px);
+}
+
+.shopStateAbilities #AbilitiesIconContainer {
+	width: 100%;
+	width: 430px;
+	background-color: linear-gradient(0% 0%, 100% 0%, #7f7088, var(--offBlack) );
+}
+
+@keyframes 'currencyAvailable' {
+	0%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+	}
+	
+	40%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+	}
+	
+	50%
+	{
+		brightness: 1.3;
+		pre-transform-scale2d: 1.02;
+	}
+	
+	60%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+	}
+	
+	70%
+	{
+		brightness: 1.3;
+		pre-transform-scale2d: 1.02;
+	}
+	
+	80%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+	}
+	
+}
+
+#AbilitiesIconContainer CitadelHudAbilityButton {
+	width: 60px;
+	height: 60px;
+	background-color: #00000060;
+	margin: 5px;
+}
+
+#AbilitiesIconContainer .ModSelectionButtonLabel {
+	padding: 8px 30px -2px 40px;
+}
+
+.shopStateAbilities #AbilitiesIconContainer .ModSelectionButtonLabel {
+	font-style: italic;
+	transform: rotateZ(-2deg);
+	pre-transform-scale2d: 1.3;
+	text-shadow: 2px 2px 0px #00000070;
+	padding: 5px 70px -2px 70px;
+	animation-name: TabSelected;
+	animation-iteration-count: 1;
+	animation-duration: 0.2s;
+}
+
+@keyframes 'TabSelected' {
+	0%
+	{
+		pre-transform-scale2d: 1;
+	}
+	
+	50%
+	{
+		pre-transform-scale2d: 1.4;
+	}
+	
+	100%
+	{
+		pre-transform-scale2d: 1.3;
+	}
+	
+}
+
+.InnerAbilitiesRow {
+	display: flex;
+	horizontal-align: right;
+	width: fit-children;
+	margin-bottom: 90px;
+	margin-right: 10px;
+	ignore-parent-flow: true;
+	vertical-align: bottom;
+	opacity: 0.9;
+}
+
+.AspectRatio16x10 .InnerAbilitiesRow {
+	margin-bottom: 130px;
+}
+
+.ModsAndActivesContainer {
+	flow-children: down;
+	width: 98%;
+	horizontal-align: center;
+}
+
+#ActivesPanel {
+	width: 510px;
+	height: 70px;
+	background-color: #222222;
+	flow-children: down;
+}
+
+.ActivesLabel {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	horizontal-align: middle;
+	padding: 20px 0px 0px 0px;
+	font-weight: bold;
+	opacity: 0.3;
+}
+
+#HeroPanel {
+	width: 100%;
+	height: 130px;
+	background-color: var(--offBlack);
+	background-image: url("/panorama/images/shop/souls_backer.svg");
+	background-img-opacity: 0.6;
+	background-size: auto 100%;
+	background-position: right top;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+}
+
+#HeroImage {
+	height: 100%;
+	width: 50%;
+	max-height: 150px;
+	vertical-align: bottom;
+	background-size: 100% auto;
+	background-position: center;
+	opacity: 0;
+}
+
+#HeroStatsBtn {
+	background-color: var(--offWhite);
+	horizontal-align: center;
+	margin-top: 5px;
+	vertical-align: bottom;
+}
+
+#HeroStatsBtn Label {
+	color: var(--offBlack);
+	font-weight: bold;
+	font-size: 14px;
+	padding: 5px 10px 6px 10px;
+	border-radius: 2px;
+}
+
+#SoulsContainer {
+	flow-children: down;
+	horizontal-align: right;
+	width: 180px;
+	vertical-align: middle;
+	opacity: 0.6;
+}
+
+#SoulAmount {
+	horizontal-align: center;
+	color: var(--shardColor);
+	display: flex;
+}
+
+.SoulsImage {
+	background-size: 100% 100%;
+	vertical-align: center;
+	background-image: url("/panorama/images/hud/core/icon_soul.svg");
+	height: 25px;
+	width: 20px;
+	wash-color: shardColor;
+	margin-right: 10px;
+}
+
+#SoulAmount Label {
+	color: shardColor;
+	font-size: 26px;
+}
+
+.totalSouls {
+	font-weight: bold;
+	horizontal-align: center;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+#SoulRewards {
+	background-color: var(--shardColor);
+	horizontal-align: center;
+	tooltip-body-position: 100% 100%;
+}
+
+#SoulRewards Label {
+	color: var(--offBlack);
+	font-weight: bold;
+	font-size: 14px;
+	padding: 5px 10px 6px 10px;
+	border-radius: 2px;
+}
+
+[data-id=MainPanel] {
+	width: 100%;
+	max-width: 1060px;
+	margin-top: 80px;
+}
+
+.AspectRatio16x10 [data-id=MainPanel] {
+	max-width: 1069px;
+}
+
+.isShowingTrainingPage [data-id=MainPanel] {
+	margin-top: 100px;
+}
+
+[data-id=ShopModsContainer] {
+	height: 100%;
+	width: 100%;
+}
+
+[data-id=ShopModListsContainer] {
+	height: 100%;
+	width: 100%;
+}
+
+#CurrentBuildSelection {
+	width: 100%;
+	height: 70px;
+	background-color: var(--red);
+}
+
+.refreshIcon {
+	width: 16px;
+	height: 16px;
+	wash-color: var(--offBlack);
+	vertical-align: middle;
+	margin-top: 3px;
+	margin-right: 7px;
+	background-image: url("/panorama/images/icons/icon_refresh.svg");
+	background-size: contain;
+}
+
+#RefreshHeroBuildsButton:hover {
+	opacity: 1;
+}
+
+.ChangeBuild {
+	font-weight: bold;
+}
+
+.BuildName {
+	max-width: 90%;
+	width: fit-children;
+	color: var(--offBlack);
+	font-size: 22px;
+	font-weight: bold;
+	vertical-align: middle;
+	tooltip-position: bottom;
+}
+
+.FavoritesIcon {
+	height: 35px;
+	width: 35px;
+	margin: 0px 10px 2px 10px;
+	background-size: contain;
+	background-image: url("/panorama/images/icons/icon_star.svg");
+	vertical-align: middle;
+	horizontal-align: center;
+	wash-color: var(--offBlack);
+}
+
+.HeroFavoritesHeaderLabel {
+	color: var(--offBlack);
+	font-size: 18px;
+	horizontal-align: center;
+	margin-top: 8px;
+}
+
+.RecommendedTextContainer {
+	vertical-align: bottom;
+	horizontal-align: center;
+	flow-children: down;
+}
+
+.RecommendedLabel {
+	vertical-align: bottom;
+	font-weight: bold;
+	font-size: 34px;
+	horizontal-align: center;
+	color: var(--offWhite);
+	text-overflow: shrink;
+	text-align: center;
+	margin: 10px;
+}
+
+.FilterType.NavLabel {
+	font-size: 14px;
+}
+
+[data-id=WeaponNav],#FavoritesNav,[data-id=TechNav],[data-id=ArmorNav] {
+	margin-right: 10px;
+}
+
+#FavoritesNav {
+	flow-children: down;
+	min-width: 200px;
+}
+
+.TabContent {
+	display: flex;
+	width: 100%;
+	vertical-align: middle;
+	margin-bottom: 3px;
+}
+
+.HeroNameRecommended {
+	font-size: 20px;
+	font-weight: bold;
+	horizontal-align: left;
+	margin-bottom: -2px;
+	vertical-align: bottom;
+	color: var(--offBlack);
+}
+
+.showingWeapon [data-id=ShopModsListWeapon],
+.showingTech [data-id=ShopModsListTech],
+.showingArmor [data-id=ShopModsListArmor],
+.showingFavorites [data-id=ShopModsSelectedBuild],
+.showingSearch [data-id=ShopModsListAll] {
+	display: flex;
+}
+
+.showingAbility1 #AbilityDetailsPanel1,
+.showingAbility2 #AbilityDetailsPanel2,
+.showingAbility3 #AbilityDetailsPanel3,
+.showingAbility4 #AbilityDetailsPanel4 {
+	opacity: 1;
+}
+
+.techUpgradesBackground {
+	width: 100%;
+	height: 200%;
+	vertical-align: center;
+	background-color: var(--offBlack);
+	box-shadow: rgba(0,0,0, 0.5) 0px 0px 16px 0px;
+}
+
+.hasAbilityUpgradeAvailable .techUpgradesBackgroundCTA,
+.hasAbilityUnlockAvailable .techUpgradesBackgroundCTA {
+	width: 1024px;
+	height: 1924px;
+	opacity: 0.003;
+	wash-color: #ffffff;
+	background-image: url("/panorama/images/upgrades/ability_upgrade_bg_tile_psd.png");
+	transform: translate3d( 0px, 0px, 0px );
+	animation-name: animTechUpgradesBackgroundCTA;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'animTechUpgradesBackgroundCTA' {
+	0%
+	{
+		transform: translate3d( 0px, 0px, 0px );
+	}
+	
+	100%
+	{
+		transform: translate3d( 0px, -212px, 0px );
+	}
+	
+}
+
+.AbilityButtonAndPointsContainer {
+	horizontal-align: center;
+	vertical-align: middle;
+}
+
+#AbilityPanelsContainer {
+	horizontal-align: right;
+	vertical-align: middle;
+	margin-right: 35px;
+}
+
+.AspectRatio16x10 #AbilityPanelsContainer {
+	margin-right: 15px;
+}
+
+.shopStateAbilities #AbilityPanelsContainer {
+	visibility: visible;
+}
+
+.currencyContainer {
+	padding: 10px 40px;
+	horizontal-align: right;
+	min-width: 200px;
+}
+
+.SoulsLabelContainer {
+	horizontal-align: center;
+	display: flex;
+}
+
+#ModCurrencyContainer,#APCurrencyContainer {
+	display: flex;
+	vertical-align: middle;
+	horizontal-align: center;
+}
+
+#APCurrencyContainer {
+	background-color: #3a373c50;
+}
+
+#ModCurrencyContainer {
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.hasAbilityUpgradeAvailable #APCurrencyContainer,.hasAbilityUnlockAvailable #APCurrencyContainer {
+	animation-name: APcurrencyAvailable;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'APcurrencyAvailable' {
+	0%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		background-color: var(--offBlack);
+	}
+	
+	50%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1.05;
+		background-color: #706a7550;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		background-color: var(--offBlack);
+	}
+	
+}
+
+@keyframes 'ModcurrencyAvailable' {
+	0%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		background-color: var(--offBlack);
+	}
+	
+	50%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1.05;
+		background-color: var(--shardColor)&80;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		pre-transform-scale2d: 1;
+		background-color: var(--offBlack);
+	}
+	
+}
+
+.currency_image {
+	width: 30px;
+	height: 30px;
+	vertical-align: center;
+	wash-color: shardColor;
+}
+
+.infiniteMoney .InfiniteCurrency {
+	visibility: visible;
+	height: 44px;
+	width: 44px;
+	margin-left: 12px;
+	vertical-align: center;
+	wash-color: var(--offWhite);
+}
+
+.currency_gold {
+	margin-left: 10px;
+	margin-top: -2px;
+	vertical-align: center;
+	font-size: 30px;
+	color: shardColor;
+	font-weight: bold;
+	color: var(--offWhite);
+}
+
+.ap_image {
+	height: 30px;
+	width: 30px;
+	vertical-align: center;
+	wash-color: var(--offWhite);
+	opacity: 0.5;
+}
+
+.currency_ap {
+	margin-left: 10px;
+	margin-top: -2px;
+	vertical-align: center;
+	font-size: 30px;
+	color: spiritBrightColor;
+	font-weight: bold;
+	color: var(--offWhite);
+}
+
+.hasAbilityUpgradeAvailable .abilityPointIcon {
+	wash-color: white;
+	animation-name: animAbilityPointIcon;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'animAbilityPointIcon' {
+	0%
+	{
+		wash-color: white;
+	}
+	
+	50%
+	{
+		wash-color: spiritLightColor;
+	}
+	
+	100%
+	{
+		wash-color: white;
+	}
+	
+}
+
+.abilityPointsContainer {
+	margin-left: 0px;
+	vertical-align: center;
+	display: flex;
+}
+
+.abilityPointsNumber {
+	padding-left: 8px;
+	margin-top: -4px;
+	vertical-align: center;
+	font-size: 64px;
+	font-weight: bold;
+	color: colorCommonOffWhite;
+}
+
+.infiniteMoney #APPointsInfinite {
+	visibility: visible;
+	height: 64px;
+	width: 64px;
+	margin-left: 12px;
+	margin-right: 8px;
+}
+
+.abilityPointsLabel {
+	margin-left: 4px;
+	vertical-align: center;
+	font-size: 21px;
+	font-weight: bold;
+	color: spiritBrightColor;
+}
+
+#BackButton {
+	width: 230px;
+	height: 80px;
+	vertical-align: top;
+	padding-left: 20px;
+	ignore-parent-flow: true;
+}
+
+#BackButton .FooterCommand {
+	vertical-align: bottom;
+	display: flex;
+	transition-property: transform, brightness;
+	transition-duration: 0.1s;
+	transition-timing-function: ease;
+	margin-right: 40px;
+}
+
+#BackButton .FooterCommand:hover {
+	brightness: 1.3;
+	transform: translateY(-2px);
+}
+
+.commandPanel {
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+.FooterCommandLabel {
+	vertical-align: middle;
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+#BackButton .controlKeyBind {
+	min-width: 32px;
+	min-height: 32px;
+	margin: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	border-radius: 4px;
+	text-align: center;
+	font-weight: bold;
+	background-color: rgba(240, 233, 231, 0.1);
+}
+
+CitadelFooterBar .isMouseButton .controlKeyBind {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#LeftCommandPanel {
+	horizontal-align: left;
+}
+
+.useDefaultEsc .DefaultESC {
+	visibility: visible;
+}
+
+.InlineGlyph {
+	height: 34px;
+	width: 34px;
+	background-size: 100% 100%;
+}
+
+.ModifiedHeaderContainer {
+	width: 100%;
+	padding: 0px 0px 8px 20px;
+}
+
+.WeaponMod .ModifiedHeaderContainer {
+	background-color: var(--courageColor);
+}
+
+.TechMod .ModifiedHeaderContainer {
+	background-color: var(--spiritColor);
+}
+
+.ModifiedTypeLabel {
+	font-family: "Swear Text Demo";
+	font-weight: bold;
+	color: var(--offWhite);
+	font-size: 30px;
+	margin-bottom: -5px;
+}
+
+.StatImportantmentLabel {
+	font-weight: bold;
+	font-style: italic;
+	color: var(--offBlack);
+	opacity: 0.7;
+}
+
+.PropertyNameContainer {
+	font-weight: bold;
+}
+
+#WeaponModsButton {
+	background-color: var(--courageDarkerColor);
+	box-shadow: 3px 3px 0px #00000060;
+	background-color: linear-gradient(2% 0%, 2.1% 0%, var(--courageColor), #4c3519 );
+	transition-property: background-color, brightness, transform;
+	transition-duration: 0.2s;
+}
+
+#WeaponModsButton:hover {
+	brightness: 1.5;
+	transform: translateY(-3px);
+}
+
+#TechModsButton {
+	background-color: linear-gradient(2% 0%, 2.1% 0%, var(--spiritColor), #253918 );
+	transition-property: background-color, transform, brightness;
+	transition-duration: 0.2s;
+}
+
+.ModSelectionButton {
+	width: 95%;
+	margin: 5px 0px;
+	display: flex;
+	transition-property: width, background-color;
+	transition-duration: 0.2s;
+}
+
+.showingWeapon #WeaponModsButton {
+	width: 100%;
+	width: 430px;
+	background-color: linear-gradient(0% 0%, 100% 0%, var(--courageColor), #583F21 );
+}
+
+.showingWeapon #WeaponModsButton:hover {
+	brightness: 1;
+	transform: translateY(0px);
+	background-color: linear-gradient(0% 0%, 100% 0%, var(--courageColor), #583F21 );
+}
+
+#TechModsButton:hover {
+	brightness: 1.5;
+	transform: translateY(-3px);
+}
+
+.showingTech #TechModsButton {
+	width: 100%;
+	width: 430px;
+	background-color: linear-gradient(0% 0%, 100% 0%, var(--spiritColor), #253918 );
+}
+
+.showingTech #TechModsButton:hover {
+	brightness: 1;
+	transform: translateY(0px);
+	background-color: linear-gradient(0% 0%, 100% 0%, var(--spiritColor), #253918 );
+}
+
+.ModSelectionButtonLabel {
+	font-size: 36px;
+	font-family: "Swear Text Demo";
+	color: var(--offWhite);
+	font-weight: bold;
+	padding: 26px 30px 30px 50px;
+	transition-property: transform, pre-transform-scale2d;
+	transition-duration: 0.2s;
+}
+
+#TechModsButton:hover .ModSelectionButtonLabel,#WeaponModsButton:hover .ModSelectionButtonLabel {
+	transform: rotateZ(-3deg);
+}
+
+.showingWeapon #WeaponModsButton .ModSelectionButtonLabel,.showingTech #TechModsButton .ModSelectionButtonLabel {
+	font-style: italic;
+	transform: rotateZ(-3deg);
+	pre-transform-scale2d: 1.3;
+	text-shadow: 2px 2px 0px #00000070;
+	animation-name: TabSelected;
+	animation-iteration-count: 1;
+	animation-duration: 0.2s;
+}
+
+@keyframes 'TabSelected' {
+	0%
+	{
+		pre-transform-scale2d: 1;
+	}
+	
+	50%
+	{
+		pre-transform-scale2d: 1.4;
+	}
+	
+	100%
+	{
+		pre-transform-scale2d: 1.3;
+	}
+	
+}
+
+.ItemLabel {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	vertical-align: middle;
+	color: var(--offWhite)&70;
+	text-shadow: 0px 0px 0px #00000000;
+	margin-top: 0px;
+	font-weight: bold;
+	font-family: var(--sans);
+	margin-left: 10px;
+}
+
+[data-id=ShopNavigation] {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	min-height: 60px;
+	horizontal-align: center;
+}
+
+.NavigationButton {
+	vertical-align: bottom;
+	background-color: #CBBCA6;
+	height: 100%;
+	border-radius: 5px 5px 0px 0px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#SearchContainer {
+	border-radius: 0px;
+}
+
+.NavigationButtonSmall {
+	vertical-align: bottom;
+	background-color: #CBBCA6;
+	height: 85%;
+	width: 11%;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.NavCategoryIcon {
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+	vertical-align: center;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	mask-size: 100%;
+	mask-repeat: no-repeat;
+}
+
+.NavIconContainer {
+	align-items: center;
+	padding: 10px 30px 10px 30px;
+}
+
+.NavIconContainerSmall {
+	align-items: center;
+	padding: 10px 30px 10px 15px;
+}
+
+.NavHeaderColor {
+	width: 100%;
+	height: 5px;
+}
+
+.NavLabel {
+	vertical-align: center;
+	font-size: 24px;
+	color: #322309;
+	font-weight: bold;
+	horizontal-align: center;
+}
+
+.DropdownIcon {
+	width: 13px;
+	height: 13px;
+	margin-left: 5px;
+	margin-top: 2px;
+	background-image: url("/panorama/images/icons/icon_carat.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	wash-color: var(--offBlack);
+	vertical-align: middle;
+}
+
+[data-id=WeaponNav] .NavCategoryIcon {
+	mask-image: url("/panorama/images/hud/core/icon_courage.svg");
+	background-color: #322309;
+}
+
+.showingWeapon [data-id=WeaponNav].NavigationButton,
+[data-id=WeaponNav] .NavHeaderColor {
+	background-color: var(--courageBrightColor);
+	font-weight: bold;
+}
+
+[data-id=ArmorNav] .NavCategoryIcon {
+	mask-image: url("/panorama/images/hud/core/icon_fortitude.svg");
+	background-color: #322309;
+}
+
+.showingArmor [data-id=ArmorNav].NavigationButton,
+[data-id=ArmorNav] .NavHeaderColor {
+	background-color: var(--fortitudeBrightColor);
+	font-weight: bold;
+}
+
+[data-id=TechNav] .NavCategoryIcon {
+	mask-image: url("/panorama/images/hud/core/icon_spirit.svg");
+	background-color: #322309;
+}
+
+.showingTech [data-id=TechNav].NavigationButton,
+[data-id=TechNav] .NavHeaderColor {
+	background-color: var(--spiritBrightColor);
+	font-weight: bold;
+}
+
+.showingFavorites #FavoritesNav.NavigationButton,
+#FavoritesNav .NavHeaderColor {
+	background-color: var(--buildsLightColor);
+}
+
+.showingWeapon [data-id=WeaponNav].NavigationButton,
+[data-id=WeaponNav] .NavHeaderColor {
+	background-color: var(--courageBrightColor);
+	font-weight: bold;
+}
+
+#FavoritesNav .NavCategoryIcon {
+	background-image: url("/panorama/images/icons/icon_star.svg");
+	background-color: #322309;
+}
+
+.isShowingTrainingPage .ReadOnlyShop {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 70px 40px;
+	margin-top: 100px;
+	background-color: color-mix(in srgb, var(--offWhite) 15%, black);
+}
+
+.ReadOnlyTitle {
+	font-size: 30px;
+	font-weight: bold;
+	horizontal-align: center;
+	text-align: center;
+}
+
+.ReadOnlyDesc {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 8px;
+	opacity: 0.9;
+}

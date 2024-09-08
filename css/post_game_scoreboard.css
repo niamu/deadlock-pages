@@ -1,0 +1,761 @@
+[data-id=CitadelPostGameScoreboard] {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 2000px;
+	height: 100%;
+	justify-content: center;
+	vertical-align: top;
+	font-family: var(--sans);
+	z-index: 1;
+}
+
+[data-id=CitadelPostGameScoreboard]::after {
+	content: "";
+	display: block;
+	width: inherit;
+	height: inherit;
+	max-height: 700px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-100px);
+	background-image: url("/panorama/images/post_game/patron_bg_psd.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	pointer-events: none;
+	z-index: -1;
+}
+
+[data-id=CitadelPostGameScoreboard].Team2Victory,
+[data-id=CitadelPostGameScoreboard].localPlayerIsTeam2.Team1Victory {
+	&::after {
+		scale: -1 1;
+	}
+}
+
+[data-id=CitadelPostGameScoreboard].localPlayerIsTeam1 {
+	& .nameContainer {
+		flex-direction: row-reverse;
+	}
+}
+
+[data-id=CitadelPostGameScoreboard].Team1Victory {
+	background: linear-gradient(135deg, color-mix(in srgb, var(--team1Color), black 65%), color-mix(in srgb, var(--team1Color), black 100%) );
+}
+
+[data-id=CitadelPostGameScoreboard].Team2Victory {
+	background: linear-gradient(135deg, color-mix(in srgb, var(--team2Color), black 100%), color-mix(in srgb, var(--team2Color), black 65%) );
+}
+
+[data-id=CitadelPostGameScoreboard].Team2Victory.localPlayerIsTeam2 {
+	background: linear-gradient(135deg, color-mix(in srgb, var(--team2Color), black 65%), color-mix(in srgb, var(--team2Color), black 100%) );
+}
+
+[data-id=CitadelPostGameScoreboard].Team1Victory.localPlayerIsTeam2 {
+	background: linear-gradient(135deg, color-mix(in srgb, var(--team1Color), black 100%), color-mix(in srgb, var(--team1Color), black 65%) );
+}
+
+[data-id=PlayerReportContainer],
+.localplayer [data-id=PlayerReportContainer],
+.CanReportPlayers .localplayer [data-id=PlayerReportContainer],
+.CanReportPlayers .localplayer.PlayerSnippet:hover [data-id=PlayerReportContainer],
+.CanReportPlayers .localplayer.Selected [data-id=PlayerReportContainer],
+.ReportedPlayer [data-id=PlayerReportContainer],
+.ReportedPlayer.PlayerSnippet:hover [data-id=PlayerReportContainer] {
+	display: inline-flex;
+	flex-direction: column;
+	opacity: 1;
+	margin-top: 20px;
+	width: 100%;
+	height: 30px;
+	justify-content: center;
+	filter: brightness(0.5);
+}
+
+[data-id=PlayerReportContainer]:hover {
+	filter: brightness(1.5);
+}
+
+[data-id=ReportPlayerLabel] {
+	flow-children: right;
+	ignore-parent-flow: true;
+	horizontal-align: middle;
+	padding: 3px 10px;
+	border-radius: 3px;
+	background-color: #000000;
+	vertical-align: middle;
+	border: 1px solid var(--offWhite);
+	filter: brightness(0.5);
+}
+
+.localplayer [data-id=ReportPlayerLabel] {
+	visibility: collapse;
+}
+
+.ReportedPlayer [data-id=ReportPlayerLabel] {
+	opacity: 0;
+}
+
+[data-id=ReportPlayerLabel]:hover {
+	filter: brightness(1.3);
+	opacity: 1;
+	background-color: rgb(149, 43, 43);
+	border: 1px solid var(--offWhite);
+}
+
+.reportLabel {
+	font-weight: semi-bold;
+	font-size: 16px;
+	margin-bottom: 2px;
+	color: var(--offWhite);
+	opacity: 0.6;
+}
+
+.reportedLabel {
+	font-weight: semi-bold;
+	font-size: 16px;
+	margin-bottom: 2px;
+	color: var(--offWhite);
+}
+
+[data-id=reportIcon] {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+	vertical-align: middle;
+	background-image: url("/panorama/images/icons/icon_report.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	wash-color: offWhite;
+	opacity: 0.7;
+}
+
+[data-id=ReportedPlayerLabel],
+.ReportedPlayer [data-id=ReportPlayerLabel] {
+	visibility: collapse;
+}
+
+.ReportedPlayer [data-id=ReportedPlayerLabel] {
+	visibility: visible;
+}
+
+[data-id=ScoreContainer] {
+	width: 100%;
+	border-top: 80px solid color-mix(in srgb, var(--offBlack), transparent 63%);
+}
+
+[data-id=GoldAndTimeContainer] {
+	display: flex;
+	justify-content: center;
+}
+
+.localPlayerIsTeam2 [data-id=GoldAndTimeContainer] {
+	flex-direction: row-reverse;
+}
+
+.TimeContainer {
+	margin: 0px 5px;
+}
+
+.TimeContainer span {
+	font-size: 18px;
+	font-family: var(--sansMono);
+	font-weight: bold;
+	padding: 2px 20px 4px;
+	background-color: var(--offBlack);
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column-reverse;
+	height: 110px;
+}
+
+.TeamNamesContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-self: center;
+	max-width: 1600px;
+}
+
+.localPlayerIsTeam2 .TeamNamesContainer {
+	flex-flow: row-reverse;
+}
+
+
+.nameContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.TeamName {
+	font-family: serif;
+	font-size: 26px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+[data-id=Team1TitleContainer] .TeamName {
+	color: var(--team1Color);
+	vertical-align: top;
+}
+
+[data-id=Team2TitleContainer] .TeamName {
+	color: var(--team2Color);
+	vertical-align: top;
+}
+
+.TeamColorCircle {
+	display: inline-block;
+	position: relative;
+	width: 26px;
+	height: 26px;
+	background-color: #FFF;
+	border-radius: 40px;
+	margin: 6px 10px;
+
+	&::after {
+		content: "";
+		display: block;
+		width: inherit;
+		height: inherit;
+		border-radius: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+		mix-blend-mode: multiply;
+	}
+}
+
+[data-id=Team1TitleContainer] .TeamColorCircle::after { background: var(--team1Color) }
+
+[data-id=Team2TitleContainer] .TeamColorCircle::after { background: var(--team2Color) }
+
+[data-id=Team1TitleContainer],
+.localPlayerIsTeam2 [data-id=Team2TitleContainer] {
+	animation-name: teamName_move_in_left;
+	animation-duration: 0.4s;
+	animation-iteration-count: 1;
+}
+
+@keyframes teamName_move_in_left {
+	0%
+	{
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+	
+	100%
+	{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	
+}
+
+[data-id=Team2TitleContainer],
+.localPlayerIsTeam2 [data-id=Team1TitleContainer] {
+	animation-name: teamName_move_in_right;
+	animation-duration: 0.4s;
+	animation-iteration-count: 1;
+}
+
+@keyframes teamName_move_in_right {
+	0%
+	{
+		transform: translateX(500px);
+		opacity: 0;
+	}
+	
+	100%
+	{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	
+}
+
+[data-id=HeroImage] {
+	height: 150px;
+	width: 111px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	border-bottom: 5px solid color-mix(in srgb, var(--offWhite) 75%, transparent);
+	object-fit: cover;
+}
+
+.localplayer [data-id=HeroImage] {
+	background: linear-gradient(to top, color-mix(in srgb, var(--offWhite) 7%, transparent ), transparent );
+}
+
+[data-id=Team1Players] [data-id=HeroImage] {
+	border-bottom: 5px solid color-mix(in srgb, var(--team1Color) 75%, transparent);
+}
+
+[data-id=Team2Players] [data-id=HeroImage] {
+	border-bottom: 5px solid color-mix(in srgb, var(--team2Color) 75%, transparent);
+}
+
+.PlayersContainer {
+	display: flex;
+	justify-content: center;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+}
+
+@keyframes players_move_in {
+	0%
+	{
+		transform: translateY(500px);
+		opacity: 0;
+	}
+	
+	100%
+	{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	
+}
+
+.localPlayerIsTeam2 .PlayersContainer {
+	flex-direction: row-reverse;
+}
+
+.TeamPlayersContainer {
+	display: flex;
+}
+
+.PlayerStatsContainer {
+	width: 100%;
+	margin-top: 10px;
+	background-color: offWhite&20;
+	padding: 0px 0px;
+	overflow: noclip;
+}
+
+.localplayer .PlayerStatsContainer {
+	background-color: offWhite&30;
+}
+
+[data-id=StatsTypeContainer] {
+	margin-top: 225px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0px 0px;
+	width: 180px;
+	vertical-align: bottom;
+	margin-bottom: 51px;
+}
+
+[data-id=CitadelPostGameScoreboard] .PlayerStatsContainer:hover [data-id=StatsTypeContainer] {
+	margin-bottom: 20px;
+}
+
+[data-id=StatsTypeContainer] span {
+	color: color-mix(in srgb, var(--offWhite) 60%, transparent);
+	letter-spacing: 1px;
+	font-size: 17px;
+	margin: 8.5px 0px;
+}
+
+.SoulsStatLabel {
+	margin-top: 30px;
+}
+
+[data-id=StatsTypeContainer],
+.PlayerStatsContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+[data-id=StatsTypeContainer] span,
+[data-id=PlayerName] {
+	horizontal-align: center;
+	text-align: center;
+}
+
+.StatsLabelContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: noclip;
+}
+
+[data-id=Kills].StatsLabelContainer,
+[data-id=Assists].StatsLabelContainer,
+[data-id=ObjDamage].StatsLabelContainer {
+	background-color: #00000050;
+}
+
+.highestNetworth.StatsLabelContainer {
+	background: linear-gradient(to left, color-mix(in srgb, var(--shardColor) 50%, transparent) 40%, transparent );
+}
+
+.mostHeroDamage.StatsLabelContainer {
+	background: linear-gradient(to left, #2972FF40 50%, #2972FF00);
+}
+
+[data-id=Kills].mostKills.StatsLabelContainer {
+	background: linear-gradient(to left, #FF5D5D40 50%, #00000050);
+}
+
+[data-id=ObjDamage].mostDamage.StatsLabelContainer {
+	background: linear-gradient(to left, #E4A83340 50%, #00000050);
+}
+
+[data-id=Assists].mostAssists.StatsLabelContainer {
+	background: linear-gradient(to left, #A230CA40 50%, #00000050);
+}
+
+.mostHealing.StatsLabelContainer {
+	background: linear-gradient(to left, #AEF02240 50%, #AEF02200);
+}
+
+.StatsLabel {
+	display: block;
+	margin: 8px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: medium;
+	font-size: 17px;
+}
+
+.highestNetworth .StatsLabel,
+.mostHeroDamage .StatsLabel,
+.mostKills .StatsLabel,
+.mostDamage .StatsLabel,
+.mostAssists .StatsLabel,
+.mostHealing .StatsLabel {
+	font-weight: bold;
+}
+
+[data-id=StatsTypeContainer] span.StatsLabel.Title {
+	color: var(--offWhite);
+}
+
+.PlayerSnippet {
+	flow-children: down;
+	width: 105px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.PlayerSnippet.Selected {
+	filter: brightness(2);
+}
+
+[data-id=NameBarGraphs] {
+	width: 100%;
+	flow-children: down;
+	background-color: color-mix(in srgb, var(--offWhite), transparent 80%);
+	padding: 15px 5px 25px 5px;
+}
+
+[data-id=Team1Players] [data-id=NameBarGraphs],
+[data-id=Team1Players] .PlayerStatsContainer {
+	background-color: color-mix(in srgb, var(--team1Color) 35%, transparent);
+}
+
+.localPlayerIsTeam1 [data-id=Team1Players] .localplayer [data-id=NameBarGraphs],
+.localPlayerIsTeam1 [data-id=Team1Players] .localplayer .PlayerStatsContainer {
+	background-color: color-mix(in srgb, var(--team1Color) 65%, transparent);
+}
+
+[data-id=Team2Players] [data-id=NameBarGraphs],
+[data-id=Team2Players] .PlayerStatsContainer {
+	background-color: color-mix(in srgb, var(--team2Color) 35%, transparent);
+}
+
+.localPlayerIsTeam2 [data-id=Team2Players] .localplayer [data-id=NameBarGraphs],
+.localPlayerIsTeam2 [data-id=Team2Players] .localplayer .PlayerStatsContainer {
+	background-color: color-mix(in srgb, var(--team2Color) 65%, transparent);
+}
+
+[data-id=ModBarGraph] {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px 15px;
+}
+
+.VictoryContainer {
+	margin-top: 80px;
+}
+
+.Team2Victory .VictoryContainer {
+	horizontal-align: right;
+}
+
+.VictoryLabel {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: serif;
+	font-style: italic;
+	color: offWhite;
+	visibility: collapse;
+}
+
+.Team1Victory [data-id=Team1TitleContainer] .VictoryLabel,
+.Team2Victory [data-id=Team2TitleContainer] .VictoryLabel {
+	visibility: visible;
+}
+
+.Team2Victory .VictoryLabel,
+.localPlayerIsTeam2.Team1Victory .VictoryLabel {
+	horizontal-align: right;
+}
+
+.localPlayerIsTeam2.Team2Victory .VictoryLabel {
+	horizontal-align: left;
+}
+
+[data-id=SwitchPage] {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+	opacity: 0.3;
+}
+
+[data-id=SwitchPage] span {
+	font-size: 18px;
+	color: var(--offWhite);
+	text-transform: uppercase;
+	padding: 8px 0px 12px 0px;
+}
+
+[data-id=GraphIcon] {
+	width: 20px;
+	height: 20px;
+	horizontal-align: center;
+	background-image: url("/panorama/images/icons/icon_graph.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+
+[data-id=NavArrow] {
+	width: 20px;
+	height: 10px;
+	opacity: 0.8;
+	horizontal-align: center;
+	background-image: url("/panorama/images/icons/icon_carat.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+[data-id=SwitchPage]:hover {
+	opacity: 0.8;
+}
+
+.TeamNetworth {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 140px;
+	height: 70px;
+}
+
+.ScoreBG {
+	position: absolute;
+	opacity: 0.4;
+	width: inherit;
+	flex-shrink: 0;
+}
+
+[data-id=Team1Networth] .ScoreBG {
+	fill: var(--team1Color);
+}
+
+[data-id=Team2Networth] .ScoreBG {
+	fill: var(--team2Color);
+}
+
+[data-id=Team1Networth] .ScoreBG,
+.localPlayerIsTeam2 [data-id=Team2Networth] .ScoreBG {
+	transform: scaleX(-1);
+}
+
+[data-id=Team2Networth] .ScoreBG,
+.localPlayerIsTeam2 [data-id=Team1Networth] .ScoreBG {
+	transform: scaleX(1);
+}
+
+.SoulsValueContainer {
+	flow-children: right;
+	horizontal-align: center;
+	vertical-align: center;
+	margin-top: -3px;
+}
+
+.ScoreContainer {
+	display: flex;
+	width: inherit;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.TotalSoulsLabel {
+	font-size: 10px;
+	font-weight: semi-bold;
+	color: #FFFFFF44;
+	horizontal-align: center;
+	visibility: collapse;
+}
+
+.SoulsValue,
+.ScoreLabel {
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: center;
+	margin-left: 4px;
+	font-family: serif;
+}
+
+[data-id=Team1Networth] .SoulsValue,
+[data-id=Team1Networth] .ScoreLabel {
+	color: team1ColorBright;
+}
+
+[data-id=Team2Networth] .SoulsValue,
+[data-id=Team2Networth] .ScoreLabel {
+	color: team2ColorBright;
+}
+
+.ScoreLabel {
+	font-size: 22px;
+}
+
+.TeamScore .ScoreLabel {
+	margin-left: 0px;
+}
+
+.ScoreLabel .demote {
+	font-size: 14px;
+	color: #70F8C130;
+	color: #70F8C1;
+}
+
+[data-id=Team1Networth] .ScoreLabel .demote {
+	color: team1Color;
+}
+
+[data-id=Team2Networth] .ScoreLabel .demote {
+	color: team2Color;
+}
+
+.SoulsImage {
+	display: inline-block;
+	background-size: 100% 100%;
+	vertical-align: text-top;
+	background-image: url("/panorama/images/hud/core/icon_soul.svg");
+	height: 18px;
+	width: 15px;
+	opacity: 0.3;
+}
+
+[data-id=TotalSoulsContainer] .SoulsImage {
+	visibility: collapse;
+}
+
+.TeamScore .SoulsImage {
+	width: 12px;
+	height: 14px;
+	opacity: 0.5;
+}
+
+[data-id=Team1Networth] .SoulsImage {
+	wash-color: team1ColorBright;
+}
+
+[data-id=Team2Networth] .SoulsImage {
+	wash-color: team2ColorBright;
+}
+
+.demote {
+	font-size: 12px;
+}
+
+.playerAward {
+	position: absolute;
+	top: 3px;
+	right: 0;
+	height: 35px;
+	width: 35px;
+	background-size: 100% 100%;
+	horizontal-align: right;
+	vertical-align: center;
+	transform: translateX(15px);
+
+	&::after {
+		content: "";
+		display: block;
+		width: inherit;
+		height: inherit;
+		rotate: 45deg;
+		scale: 0.75;
+		border-radius: 6px;
+		mix-blend-mode: multiply;
+	}
+}
+
+.mostKills .playerAward {
+	background-image: url("/panorama/images/post_game/stat_kills_png.png");
+	
+	&::after {
+		background: #FF5D5D;
+	}
+}
+
+.mostDamage .playerAward {
+	background-image: url("/panorama/images/post_game/stat_objective_damage_png.png");
+	
+	&::after {
+		background: #E4A833;
+	}
+}
+
+.mostHealing .playerAward {
+	background-image: url("/panorama/images/post_game/stat_healing_png.png");
+	
+	&::after {
+		background: #AEF022;
+	}
+}
+
+.highestNetworth .playerAward {
+	background-image: url("/panorama/images/post_game/stat_souls_png.png");
+	
+	&::after {
+		background: var(--shardColor);
+	}
+}
+
+.mostAssists .playerAward {
+	background-image: url("/panorama/images/post_game/stat_assists_png.png");
+	
+	&::after {
+		background: #A230CA;
+	}
+}
+
+.mostHeroDamage .playerAward {
+	background-image: url("/panorama/images/post_game/stat_hero_damage_png.png");
+	
+	&::after {
+		background: #2972FF;
+	}
+}

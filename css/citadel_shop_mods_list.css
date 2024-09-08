@@ -1,0 +1,99 @@
+/* Prettified by Source 2 Viewer 10.2.0.0 - https://valveresourceformat.github.io */
+
+[data-class=CitadelShopModsList] {
+	width: 100%;
+	display: none;
+	overflow: hidden;
+	horizontal-align: center;
+	flex-direction: column;
+}
+
+.showingWeapon [data-class=CitadelShopModsList] {
+	background: linear-gradient(to right, #583F21 10%, color-mix(in srgb, var(--courageDarkColor), transparent 60%) );
+}
+
+.showingArmor [data-class=CitadelShopModsList] {
+	background: linear-gradient(to right, var(--fortitudeDarkColor) 10%, color-mix(in srgb, var(--fortitudeColor), transparent 30%) );
+}
+
+.showingTech [data-class=CitadelShopModsList] {
+	background: linear-gradient(to right, var(--spiritDarkerColor) 10%, color-mix(in srgb, var(--spiritColor), transparent 30%) );
+}
+
+.showingFavorites [data-class=CitadelShopModsList] {
+	background: linear-gradient(to right, #7b752f90 10%, #7b752f20 );
+}
+
+.showingFilters [data-class=CitadelShopModsList] {
+	background: #3e3a34;
+}
+
+.showingSearch [data-class=CitadelShopModsList] {
+	background: #3e3a34;
+}
+
+.showingWeapon [data-id=ShopModsListWeapon] {
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in;
+	border-top: 7px solid var(--courageBrightColor);
+}
+
+.showingTech [data-id=ShopModsListTech] {
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in;
+	border-top: 7px solid var(--spiritBrightColor);
+}
+
+.showingArmor [data-id=ShopModsListArmor] {
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in;
+	border-top: 7px solid var(--fortitudeBrightColor);
+}
+
+.showingFavorites [data-id=ShopModsBuild] {
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in;
+	border-top: 0px solid #C3B661;
+}
+
+.showingFilters [data-id=ShopModsListAll] {
+	animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in;
+	border-top: 7px solid #555;
+}
+
+@keyframes courageAnimateIn {
+	0%
+	{
+		transform: translate3d( -550px, 0px, 0px );
+		opacity: 0;
+	}
+	
+	100%
+	{
+		transform: translate3d( 0px, 0px, 0px );
+		opacity: 1;
+	}
+	
+}
+
+@keyframes spiritAnimateIn {
+	0%
+	{
+		transform: translate3d( 550px, 0px, 0px );
+		opacity: 0;
+	}
+	
+	100%
+	{
+		transform: translate3d( 0px, 0px, 0px );
+		opacity: 1;
+	}
+	
+}
+

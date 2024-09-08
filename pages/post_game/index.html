@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deadlock Game</title>
+	<link rel="stylesheet" type="text/css" href="/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="/css/citadel_hud_mod_bar_graph.css">
+	<link rel="stylesheet" type="text/css" href="/css/post_game_scoreboard.css" />
+</head>
+<body>
+	<div data-id="CitadelPostGameScoreboard" class="Team1Victory localPlayerIsTeam1">
+		<div data-id="ScoreContainer">
+			<div data-id="GoldAndTimeContainer">
+				<div data-id="Team1Networth" class="TeamNetworth">
+					<svg class="ScoreBG" viewBox="0 0 92 40">
+						<path d="M0 7.62939e-06H68.627L92 0C84.0432 -0.000137329 81.277 47.8957 46.2486 38.867C28.7084 34.3459 4.33083 21.6594 0 19.6795V7.62939e-06Z" />
+					</svg>
+
+					<div class="ScoreContainer">
+						<div class="SoulsImage"></div>
+						<span class="ScoreLabel">137k</span>
+					</div>
+				</div>
+				<div class="TimeContainer">
+					<span class="TimeLabel">27:04</span>
+				</div>
+				<div data-id="Team2Networth" class="TeamNetworth">
+					<svg class="ScoreBG" viewBox="0 0 92 40">
+						<path d="M0 7.62939e-06H68.627L92 0C84.0432 -0.000137329 81.277 47.8957 46.2486 38.867C28.7084 34.3459 4.33083 21.6594 0 19.6795V7.62939e-06Z" />
+					</svg>
+					<div class="ScoreContainer">
+						<div class="SoulsImage"></div>
+						<span class="ScoreLabel">127k</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="TeamNamesContainer">
+			<div data-id="Team1TitleContainer" class="titleContainer">
+				<div data-id="Team1NameContainer" class="nameContainer">
+					<div class="TeamColorCircle"></div>
+					<span class="TeamName">The Amber Hand</span>
+				</div>
+				<span class="VictoryLabel">Victory</span>
+			</div>
+			<div data-id="Team2TitleContainer" class="titleContainer">
+				<div data-id="Team2NameContainer" class="nameContainer">
+					<span class="TeamName">The Sapphire Flame</span>
+					<div class="TeamColorCircle"></div>
+				</div>
+				<span class="VictoryLabel">Victory</span>
+			</div>
+		</div>
+		<div class="PlayersContainer">
+			<div data-id="Team1Players" class="TeamPlayersContainer">
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/gigawatt_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/wraith_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/inferno_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/lash_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/archer_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/viscous_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div data-id="StatsTypeContainer">
+				<span class="StatsLabel Title">Player Stats</span>
+				<span class="StatsLabel Row0 SoulsStatLabel">Total Souls</span>
+				<span class="StatsLabel Row1">Kills</span>
+				<span class="StatsLabel Row2">Deaths</span>
+				<span class="StatsLabel Row3">Assists</span>
+				<span class="StatsLabel Row4">Player DMG</span>
+				<span class="StatsLabel Row5">OBJ DMG</span>
+				<span class="StatsLabel Row6">Healing</span>
+			</div>
+			<div data-id="Team2Players" class="TeamPlayersContainer">
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/haze_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="PlayerSnippet localplayer">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/bull_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[ME]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50">+50% Weapon</progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50">+50% Vitality</progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50">+50% Spirit</progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer highestNetworth">
+							<div class="playerAward"></div>
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer mostKills">
+							<div class="playerAward"></div>
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer mostAssists">
+							<div class="playerAward"></div>
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer mostHeroDamage">
+							<div class="playerAward"></div>
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer mostDamage">
+							<div class="playerAward"></div>
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer mostHealing">
+							<div class="playerAward"></div>
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/warden_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/sumo_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/bebop_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+				<div class="PlayerSnippet">
+					<img data-id="HeroImage" class="heroImg" src="/panorama/images/heroes/chrono_vertical_psd.png">
+					<div data-id="NameBarGraphs">
+						<div data-id="PlayerName">
+							<span>[BOT]</span>
+						</div>
+						<div data-id="ModBarGraph">
+							<progress data-id="WeaponProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="ArmorProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+							<progress data-id="TechProgressBar" class="modsProgressBar" max="100" value="50"></progress>
+						</div>
+					</div>
+					<div class="PlayerStatsContainer">
+						<div data-id="Networth" class="StatsLabelContainer">
+							<span class="PlayerNetworth Row0 StatsLabel">30,680</span>
+						</div>
+						<div data-id="Kills" class="StatsLabelContainer">
+							<span class="PlayerKills Row1 StatsLabel">20</span>
+						</div>
+						<div data-id="Deaths" class="StatsLabelContainer">
+							<span class="PlayerDeaths Row2 StatsLabel">4</span>
+						</div>
+						<div data-id="Assists" class="StatsLabelContainer">
+							<span class="PlayerAssists Row3 StatsLabel">9</span>
+						</div>
+						<div data-id="PlayerDamage" class="StatsLabelContainer">
+							<span class="PlayerHeroDmg Row4 StatsLabel">30,578</span>
+						</div>
+						<div data-id="ObjDamage" class="StatsLabelContainer">
+							<span class="PlayerObjDmg Row5 StatsLabel">11,791</span>
+						</div>
+						<div data-id="Healing" class="StatsLabelContainer">
+							<span class="PlayerHealing Row6 StatsLabel">20,842</span>
+						</div>
+					</div>
+					<div data-id="PlayerReportContainer">
+						<button data-id="ReportPlayerLabel">
+							<div data-id="reportIcon"></div>
+							<span class="reportLabel">Report</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-id="SwitchPage">
+			<div data-id="GraphIcon"></div>
+			<span>View Graphs</span>
+			<div data-id="NavArrow"></div>
+		</div>
+	</div>
+</body>
+</html>

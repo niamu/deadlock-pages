@@ -1,0 +1,791 @@
+/* Prettified by Source 2 Viewer 10.2.0.0 - https://valveresourceformat.github.io */
+
+#root {
+	min-width: 1270px;
+	padding: 4rem;
+	background-color: rgba(0, 0, 0, 0.56);
+}
+
+video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	max-height: 100vh;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	z-index: -1;
+}
+
+.LeftPanel {
+	width: 25%;
+	height: 100%;
+}
+
+.RightPanel {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.AspectRatio16x10 .RightPanel {
+	width: 70%;
+}
+
+.ProfileSection {
+	width: 100%;
+	height: 210px;
+	display: flex;
+	padding: 0px 20px;
+	margin-bottom: 30px;
+}
+
+[data-id=ProfileInfo] {
+	display: flex;
+	flex-direction: column;
+}
+
+[data-id=MatchBlockBigContainer],
+[data-id=MatchBlockMiniContainer] {
+	display: flex;
+	gap: 10px;
+}
+
+[data-id=MatchBlockBigContainer] {
+	gap: 10px;
+}
+
+[data-id=HeroInfoArea] {
+	vertical-align: bottom;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 150px;
+	margin-left: 70px;
+}
+
+.bigHeroName {
+	font-family: var(--serif);
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
+.bigHeroLabel {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 0.6;
+}
+
+.StatRow {
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.StatValue {
+	vertical-align: center;
+	width: 190px;
+	margin-right: 20px;
+}
+
+.StatValue span {
+	color: var(--offWhite);
+	font-size: 28px;
+	font-weight: bold;
+	text-align: right;
+	font-family: var(--sansMono);
+}
+
+.StatName {
+	vertical-align: center;
+	width: fill-parent-flow( 1.0 );
+}
+
+.StatName span {
+	color: #a4a4a4;
+	font-size: 26px;
+}
+
+[data-id=SelfImage] {
+	width: 60px;
+	height: 60px;
+	margin: 0px 15px;
+	border: 2px solid #4c4c4c90;
+}
+
+[data-id=SelfName] {
+	vertical-align: center;
+}
+
+[data-id=SelfName] span {
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.HeroRightCol {
+	display: flex;
+	flex-direction: column;
+	vertical-align: center;
+}
+
+.MostPlayedLabel {
+	font-size: 22px;
+	color: #888888;
+}
+
+.MostPlayedNameLabel {
+	font-size: 30px;
+	color: white;
+}
+
+[data-id=HeroFeatureLabel] {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--offWhite);
+	opacity: 0.3;
+}
+
+[data-id=HeroFeatureName] {
+	font-size: 40px;
+	font-family: var(--serif);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--offWhite);
+}
+
+[data-id=MatchHistoryArea] {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.titleArea {
+	display: flex;
+	height: 30px;
+	margin-bottom: 10px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.smallTitle {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+[data-id=MatchHistoryButton] {
+	text-align: right;
+	justify-self: flex-end;
+	opacity: 0.3;
+}
+
+[data-id=MatchHistoryButton]:hover {
+	opacity: 1;
+}
+
+[data-id=allHistoryIcon] {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-left: 5px;
+	background-image: url("/panorama/images/icons/arrow_east.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+[data-id=MatchHistoryButton] .smallTitle {
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: none;
+}
+
+[data-id=MatchHistoryList] {
+	display: flex;
+	height: 140px;
+	gap: 10px;
+	justify-content: center;
+}
+
+.MatchBlockBig {
+	position: relative;
+	width: 275px;
+	height: 136px;
+	background-color: color-mix(in srgb, #000 60%, transparent);
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.MatchBlockBig.team1,.gameMiniBlock.team1 {
+	background-color: #534716;
+	background: linear-gradient(to bottom, #2b250c, #534716);
+}
+
+.MatchBlockBig.team2,.gameMiniBlock.team2 {
+	background-color: #2D3C70;
+	background: linear-gradient(to bottom, #0f1941, #2D3C70);
+}
+
+.MatchBlockBig:hover {
+	brightness: 1.3;
+	background-color: #333;
+}
+
+.teamStripe {
+	height: 6px;
+	width: 100%;
+	position: absolute;
+}
+
+.team1 .teamStripe {
+	background-color: var(--team1Color);
+}
+
+.team2 .teamStripe {
+	background-color: var(--team2Color);
+}
+
+.gameContent {
+	position: absolute;
+	width: 100%;
+	height: inherit;
+}
+
+.gameInfo {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 100%;
+}
+
+[data-id=gameResultRow] {
+	width: 100%;
+	display: flex;
+}
+
+.gameResult {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.gameNetworth {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: var(--shardColor);
+	text-align: right;
+	vertical-align: bottom;
+	margin: 10px;
+	z-index: 10;
+	text-shadow: 0px 0px 10px #000;
+}
+
+.heroName {
+	font-weight: bold;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-family: var(--serif);
+}
+
+.gameDuration {
+	font-weight: bold;
+	font-size: 16px;
+	opacity: 0.7;
+}
+
+.gameDate {
+	font-weight: bold;
+	font-size: 16px;
+	opacity: 0.5;
+	vertical-align: bottom;
+	margin-top: 15px;
+}
+
+.heroImg {
+	max-height: 100%;
+	width: 95px;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	object-fit: contain;
+}
+
+.gameMiniBlock .heroImg {
+	vertical-align: bottom;
+	text-align: center;
+	margin-top: 68px;
+}
+
+[data-id=Overlay] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 100;
+	opacity: 0;
+}
+
+.viewDetails {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+}
+
+.viewDetails:has(span:nth-child(2)) .arrowIcon {
+	opacity: 1;
+}
+
+.viewDetails span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	text-transform: uppercase;
+	opacity: 0.6;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.arrowIcon {
+	display: inline-block;
+	text-align: center;
+	background-image: url("/panorama/images/icons/arrow_east.svg");
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+}
+
+.gameMiniBlock .arrowIcon {
+	width: 25px;
+	height: 25px;
+	opacity: 0.6;
+}
+
+.MatchBlockBig:hover [data-id=Overlay],
+.gameMiniBlock:hover [data-id=Overlay] {
+	opacity: 1;
+}
+
+.MiniMatchBlock {
+	display: flex;
+	height: 136px;
+	margin-left: 0px;
+}
+
+.AspectRatio16x10 .MiniMatchBlock {
+	width: 360px;
+}
+
+.gameMiniBlock {
+	position: relative;
+	width: 60px;
+	background-color: #333;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.gameResultShort {
+	text-align: middle;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.win .gameResultShort,.win .gameResult {
+	color: rgb(97, 231, 97);
+}
+
+.loss .gameResultShort,.loss .gameResult {
+	color: rgb(200, 84, 84);
+}
+
+[data-id=Statistics] {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+[data-id=StatsContent] {
+	display: flex;
+	justify-content: end;
+	width: 1270px;
+	height: 650px;
+	overflow: hidden;
+	background-image: url("/panorama/images/main_menu/slate_texture_png.png");
+}
+
+[data-id=HeroList] {
+	height: auto;
+	width: 275px;
+	background-color: color-mix(in srgb, var(--offBlack) 56%, transparent);
+	display: flex;
+	gap: 6px;
+	flex-direction: column;
+	overflow: scroll;
+	flex-shrink: 0;
+
+	& img {
+		left: 0;
+		width: 50px;
+	}
+}
+
+[data-id=StatsBlock] {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	grid-auto-rows: min-content;
+	background-color: color-mix(in srgb, #000 40%, transparent);
+}
+
+[data-id=StatsTitle] {
+	grid-column: 1 / 6;
+  	grid-row: 1;
+	width: 100%;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 50px;
+	background: linear-gradient(to right, color-mix(in srgb, #767676 50%, transparent) 20%, transparent);
+}
+
+.hero_orion [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--orionColor) 50%, transparent) 20%, transparent) }
+.hero_astro [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--astroColor) 50%, transparent) 20%, transparent) }
+.hero_bebop [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--bebopColor) 50%, transparent) 20%, transparent) }
+.hero_atlas [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--atlasColor) 35%, transparent) 20%, transparent) }
+.hero_chrono [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--chronoColor) 50%, transparent) 20%, transparent) }
+.hero_forge [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--forgeColor) 50%, transparent) 20%, transparent) }
+.hero_ghost [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--ghostColor) 50%, transparent) 20%, transparent) }
+.hero_gigawatt [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--gigawattColor) 50%, transparent) 20%, transparent) }
+.hero_haze [data-id=StatsTitle]		{ background: linear-gradient(to right, color-mix(in srgb, var(--hazeColor) 50%, transparent) 20%, transparent) }
+.hero_hornet [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--hornetColor) 50%, transparent) 20%, transparent) }
+.hero_inferno [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--infernoColor) 50%, transparent) 20%, transparent) }
+.hero_kelvin [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--kelvinColor) 50%, transparent) 20%, transparent) }
+.hero_lash [data-id=StatsTitle]		{ background: linear-gradient(to right, color-mix(in srgb, var(--lashColor) 50%, transparent) 20%, transparent) }
+.hero_krill [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--krillColor) 50%, transparent) 20%, transparent) }
+.hero_shiv [data-id=StatsTitle]		{ background: linear-gradient(to right, color-mix(in srgb, var(--shivColor) 50%, transparent) 20%, transparent) }
+.hero_dynamo [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--dynamoColor) 50%, transparent) 20%, transparent) }
+.hero_viscous [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--viscousColor) 50%, transparent) 20%, transparent) }
+.hero_warden [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--wardenColor) 50%, transparent) 20%, transparent) }
+.hero_wraith [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--wraithColor) 50%, transparent) 20%, transparent) }
+.hero_yamato [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--yamatoColor) 50%, transparent) 20%, transparent) }
+.hero_tengu [data-id=StatsTitle]	{ background: linear-gradient(to right, color-mix(in srgb, var(--tenguColor) 50%, transparent) 20%, transparent) }
+
+.statSectionLabel {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--offWhite);
+	opacity: 0.5;
+	font-family: var(--sans);
+	font-weight: 300;
+}
+
+.statSectionName {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	vertical-align: middle;
+	font-family: var(--serif);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+[data-id=StatsLeft] {
+	grid-column: 1 / 3;
+  	grid-row: 2;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 25px 50px;
+}
+
+[data-id=StatsRight] {
+	display: inline-grid;
+	grid-template-columns: repeat(3, 140px);
+	grid-auto-rows: repeat(2, 1fr);
+	gap: 0 20px;
+	grid-column: 3 / 6;
+  	grid-row: 2;
+	flex-wrap: wrap;
+	margin-top: -50px;
+}
+
+.StatRow {
+	display: flex;
+}
+
+.statValue {
+	font-weight: bold;
+}
+
+.statLabel {
+	display: inline-block;
+	font-weight: 600;
+	opacity: 0.9;
+}
+
+.TextStat {
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;
+	margin-bottom: 40px;
+	width: 40%;
+}
+
+.TextStat.largeStat .statValue {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.TextStat .statValue {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.BlockStat {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	width: 140px;
+}
+
+.BlockStat .statValue {
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 10px;
+	max-height: 45px;
+	margin: 20px 10px 0px 10px;
+	text-overflow: shrink;
+	text-align: center;
+}
+
+.BlockStat .labelContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 60px;
+}
+
+.BlockStat .statLabel {
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 10px;
+	opacity: 0.8;
+}
+
+.BlockStat.isZeroValue,.TextStat.isZeroValue {
+	opacity: 0.1;
+}
+
+.blockBacker {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	height: 78%;
+	border-radius: 3px;
+	box-shadow: 0px 0px 30px #00000090;
+	padding: 3px;
+	background: linear-gradient(#3e3b3b, #000);
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+		border: 3px solid rgba(255, 255, 255, 0.15);
+		mix-blend-mode: difference;
+	}
+}
+
+.BlockStat .statValue,.BlockStat .statLabel,.BlockStat .subStat {
+	text-align: center;
+}
+
+.BlockStat .subInfo {
+	text-align: center;
+}
+
+.StatIcon {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-image: url("/panorama/images/post_game/stat_objective_damage_png.png");
+	background-size: contain;
+	align-self: center;
+	margin-top: -30px;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: inherit;
+		height: inherit;
+		rotate: 45deg;
+		scale: 0.7;
+		border-radius: 10px;
+		background: #FF5D5D;
+		mix-blend-mode: multiply;
+		box-shadow: 0px 0px 12px 5px #000;
+	}
+}
+
+.Kills .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_kills_png.png");
+	
+	&::before {
+		background: #FF5D5D;
+	}
+}
+
+.Assists .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_assists_png.png");
+	
+	&::before {
+		background: #A230CA;
+	}
+}
+
+.ObjectiveDmg .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_objective_damage_png.png");
+	
+	&::before {
+		background: #E4A833;
+	}
+}
+
+.PlayerDmg .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_hero_damage_png.png");
+	
+	&::before {
+		background: #2972FF;
+	}
+}
+
+.Healing .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_healing_png.png");
+	
+	&::before {
+		background: #AEF022;
+	}
+}
+
+.Networth .StatIcon {
+	background-image: url("/panorama/images/post_game/stat_networth_png.png");
+	
+	&::before {
+		background: var(--shardColor);
+	}
+}
+
+.defaultText {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.hero_orion [data-id=HeroRowBackground] { background-color: var(--orionColor) }
+.hero_astro [data-id=HeroRowBackground] { background-color: var(--astroColor) }
+.hero_bebop [data-id=HeroRowBackground] { background-color: var(--bebopColor) }
+.hero_atlas [data-id=HeroRowBackground] { background-color: var(--atlasColor) }
+.hero_chrono [data-id=HeroRowBackground] { background-color: var(--chronoColor) }
+.hero_forge [data-id=HeroRowBackground] { background-color: var(--forgeColor) }
+.hero_ghost [data-id=HeroRowBackground] { background-color: var(--ghostColor) }
+.hero_gigawatt [data-id=HeroRowBackground] { background-color: var(--gigawattColor) }
+.hero_haze [data-id=HeroRowBackground] { background-color: var(--hazeColor) }
+.hero_hornet [data-id=HeroRowBackground] { background-color: var(--hornetColor) }
+.hero_inferno [data-id=HeroRowBackground] { background-color: var(--infernoColor) }
+.hero_kelvin [data-id=HeroRowBackground] { background-color: var(--kelvinColor) }
+.hero_lash [data-id=HeroRowBackground] { background-color: var(--lashColor) }
+.hero_krill [data-id=HeroRowBackground] { background-color: var(--krillColor) }
+.hero_shiv [data-id=HeroRowBackground] { background-color: var(--shivColor) }
+.hero_dynamo [data-id=HeroRowBackground] { background-color: var(--dynamoColor) }
+.hero_viscous [data-id=HeroRowBackground] { background-color: var(--viscousColor) }
+.hero_warden [data-id=HeroRowBackground] { background-color: var(--wardenColor) }
+.hero_wraith [data-id=HeroRowBackground] { background-color: var(--wraithColor) }
+.hero_yamato [data-id=HeroRowBackground] { background-color: var(--yamatoColor) }
+.hero_tengu [data-id=HeroRowBackground] { background-color: var(--tenguColor) }
+
+.heroRow {
+	position: relative;
+	width: 265px;
+	height: 50px;
+	opacity: 0.75;
+}
+
+.heroRow.selected {
+	background-color: rgba(0, 0, 0, 0.66);
+	opacity: 1;
+}
+
+.heroRow:hover {
+	background-color: rgba(0, 0, 0, 0.66);
+	opacity: 0.8;
+}
+
+[data-id=HeroRowImage] {
+	height: 50px;
+	width: 50px;
+	filter: saturate(0.3);
+	transition-property: transform;
+	transition-duration: 0.1s;
+}
+
+.heroRow.selected [data-id=HeroRowImage],
+.heroRow.selected .heroRowName {
+	transform: translateX(10px);
+	filter: saturate(1);
+}
+
+.heroRowName {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 50px;
+	margin-left: 60px;
+	justify-content: center;
+	font-family: var(--serif);
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+	font-size: 18px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	transition-property: transform;
+	transition-duration: 0.1s;
+}
+
+[data-id=HeroRowBackground] {
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	mask-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), #FFF);
+}
+

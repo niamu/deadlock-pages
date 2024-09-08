@@ -1,0 +1,12 @@
+.modsProgressBar {
+	width: 100%;
+	height: 6px;
+	margin: 1px 0;
+}
+
+[data-id=WeaponProgressBar]::-webkit-progress-value	{ background: linear-gradient(to right, var(--courageBrightColor), var(--courageLightColor)) }
+[data-id=WeaponProgressBar]::-moz-progress-bar		{ background: linear-gradient(to right, var(--courageBrightColor), var(--courageLightColor)) }
+[data-id=ArmorProgressBar]::-webkit-progress-value	{ background: linear-gradient(to right, var(--fortitudeBrightColor), var(--fortitudeLightColor)) }
+[data-id=ArmorProgressBar]::-moz-progress-bar		{ background: linear-gradient(to right, var(--fortitudeBrightColor), var(--fortitudeLightColor)) }
+[data-id=TechProgressBar]::-webkit-progress-value	{ background: linear-gradient(to right, var(--spiritBrightColor), var(--spiritLightColor)) }
+[data-id=TechProgressBar]::-moz-progress-bar		{ background: linear-gradient(to right, var(--spiritBrightColor), var(--spiritLightColor)) }
