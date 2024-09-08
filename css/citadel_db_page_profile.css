@@ -194,7 +194,7 @@ video {
 	height: 18px;
 	vertical-align: middle;
 	margin-left: 5px;
-	background-image: url("../../panorama/images/icons/arrow_east.svg");
+	background-image: url("../panorama/images/icons/arrow_east.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -360,7 +360,7 @@ video {
 .arrowIcon {
 	display: inline-block;
 	text-align: center;
-	background-image: url("../../panorama/images/icons/arrow_east.svg");
+	background-image: url("../panorama/images/icons/arrow_east.svg");
 	width: 15px;
 	height: 15px;
 	margin-left: 5px;
@@ -431,7 +431,7 @@ video {
 	width: 1270px;
 	height: 650px;
 	overflow: hidden;
-	background-image: url("../../panorama/images/main_menu/slate_texture_png.png");
+	background-image: url("../panorama/images/main_menu/slate_texture_png.png");
 }
 
 [data-id=HeroList] {
@@ -637,7 +637,7 @@ video {
 	position: relative;
 	width: 60px;
 	height: 60px;
-	background-image: url("../../panorama/images/post_game/stat_objective_damage_png.png");
+	background-image: url("../panorama/images/post_game/stat_objective_damage_png.png");
 	background-size: contain;
 	align-self: center;
 	margin-top: -30px;
@@ -660,7 +660,7 @@ video {
 }
 
 .Kills .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_kills_png.png");
+	background-image: url("../panorama/images/post_game/stat_kills_png.png");
 	
 	&::before {
 		background: #FF5D5D;
@@ -668,7 +668,7 @@ video {
 }
 
 .Assists .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_assists_png.png");
+	background-image: url("../panorama/images/post_game/stat_assists_png.png");
 	
 	&::before {
 		background: #A230CA;
@@ -676,7 +676,7 @@ video {
 }
 
 .ObjectiveDmg .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_objective_damage_png.png");
+	background-image: url("../panorama/images/post_game/stat_objective_damage_png.png");
 	
 	&::before {
 		background: #E4A833;
@@ -684,7 +684,7 @@ video {
 }
 
 .PlayerDmg .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_hero_damage_png.png");
+	background-image: url("../panorama/images/post_game/stat_hero_damage_png.png");
 	
 	&::before {
 		background: #2972FF;
@@ -692,7 +692,7 @@ video {
 }
 
 .Healing .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_healing_png.png");
+	background-image: url("../panorama/images/post_game/stat_healing_png.png");
 	
 	&::before {
 		background: #AEF022;
@@ -700,7 +700,7 @@ video {
 }
 
 .Networth .StatIcon {
-	background-image: url("../../panorama/images/post_game/stat_networth_png.png");
+	background-image: url("../panorama/images/post_game/stat_networth_png.png");
 	
 	&::before {
 		background: var(--shardColor);

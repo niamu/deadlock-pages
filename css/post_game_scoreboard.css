@@ -20,7 +20,7 @@
 	top: 0;
 	left: 0;
 	transform: translateY(-100px);
-	background-image: url("../../panorama/images/post_game/patron_bg_psd.png");
+	background-image: url("../panorama/images/post_game/patron_bg_psd.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	opacity: 0.6;
@@ -126,7 +126,7 @@
 	height: 15px;
 	margin-right: 8px;
 	vertical-align: middle;
-	background-image: url("../../panorama/images/icons/icon_report.svg");
+	background-image: url("../panorama/images/icons/icon_report.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -538,7 +538,7 @@
 	width: 20px;
 	height: 20px;
 	horizontal-align: center;
-	background-image: url("../../panorama/images/icons/icon_graph.svg");
+	background-image: url("../panorama/images/icons/icon_graph.svg");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -550,7 +550,7 @@
 	height: 10px;
 	opacity: 0.8;
 	horizontal-align: center;
-	background-image: url("../../panorama/images/icons/icon_carat.svg");
+	background-image: url("../panorama/images/icons/icon_carat.svg");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -661,7 +661,7 @@
 	display: inline-block;
 	background-size: 100% 100%;
 	vertical-align: text-top;
-	background-image: url("../../panorama/images/hud/core/icon_soul.svg");
+	background-image: url("../panorama/images/hud/core/icon_soul.svg");
 	height: 18px;
 	width: 15px;
 	opacity: 0.3;
@@ -713,7 +713,7 @@
 }
 
 .mostKills .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_kills_png.png");
+	background-image: url("../panorama/images/post_game/stat_kills_png.png");
 	
 	&::after {
 		background: #FF5D5D;
@@ -721,7 +721,7 @@
 }
 
 .mostDamage .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_objective_damage_png.png");
+	background-image: url("../panorama/images/post_game/stat_objective_damage_png.png");
 	
 	&::after {
 		background: #E4A833;
@@ -729,7 +729,7 @@
 }
 
 .mostHealing .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_healing_png.png");
+	background-image: url("../panorama/images/post_game/stat_healing_png.png");
 	
 	&::after {
 		background: #AEF022;
@@ -737,7 +737,7 @@
 }
 
 .highestNetworth .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_souls_png.png");
+	background-image: url("../panorama/images/post_game/stat_souls_png.png");
 	
 	&::after {
 		background: var(--shardColor);
@@ -745,7 +745,7 @@
 }
 
 .mostAssists .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_assists_png.png");
+	background-image: url("../panorama/images/post_game/stat_assists_png.png");
 	
 	&::after {
 		background: #A230CA;
@@ -753,7 +753,7 @@
 }
 
 .mostHeroDamage .playerAward {
-	background-image: url("../../panorama/images/post_game/stat_hero_damage_png.png");
+	background-image: url("../panorama/images/post_game/stat_hero_damage_png.png");
 	
 	&::after {
 		background: #2972FF;

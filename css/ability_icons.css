@@ -67,110 +67,110 @@
 }
 
 .item_gadget .mod_icon,.item_gadget .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_active_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_active_psd.png");
 }
 
 .item_gadget_enemy .mod_icon,.item_gadget_enemy .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_active_enemy_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_active_enemy_psd.png");
 	background-color: var(--activeEnemyColor);
 }
 
 .upgrade_tech_pricey .mod_icon,.upgrade_tech_pricey .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_active_gold_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_active_gold_psd.png");
 	background-color: var(--yellow);
 	opacity: 1;
 }
 
 .upgrade_infinite .mod_icon,.upgrade_infinite .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_infinite_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_infinite_psd.png");
 }
 
 .item_passive .mod_icon,.item_passive .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_passive_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_passive_psd.png");
 }
 
 .upgrade_health .mod_icon,.upgrade_health .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/health_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/health_psd.png");
 }
 
 .upgrade_health2 .mod_icon,.upgrade_health2 .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/base_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/base_armor_psd.png");
 }
 
 .healthTank .mod_icon,.healthTank .ability_icon,.healthTank.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/health_tank_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/health_tank_psd.png");
 }
 
 .upgrade_armor .mod_icon,.upgrade_armor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/armor_psd.png");
 	background-color: var(--armorColor);
 }
 
 .upgrade_wdamage .mod_icon,.upgrade_wdamage .ability_icon {
-	mask-image: url("../../panorama/images/hud/abilities/weapon_damage_psd.png");
+	mask-image: url("../panorama/images/hud/abilities/weapon_damage_psd.png");
 }
 
 .upgrade_tech_resist .mod_icon,.upgrade_tech_resist .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/upgrade_shield_psd.png");
+	mask-image: url("../panorama/images/upgrades/upgrade_shield_psd.png");
 	background-color: var(--armorColor);
 }
 
 .upgrade_melee .mod_icon,.upgrade_melee .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/melee_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/melee_icon_psd.png");
 	background-color: #dd1111ff;
 }
 
 .upgrade_all_stats .mod_icon,.upgrade_all_stats .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/all_stats_psd.png");
+	mask-image: url("../panorama/images/upgrades/all_stats_psd.png");
 }
 
 .upgrade_weapon .mod_icon,.upgrade_weapon .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/weapon_power_psd.png");
+	mask-image: url("../panorama/images/upgrades/weapon_power_psd.png");
 	background-color: var(--damageColor);
 }
 
 .upgrade_tech .mod_icon,.upgrade_tech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/tech_power_psd.png");
+	mask-image: url("../panorama/images/upgrades/tech_power_psd.png");
 	background-color: var(--techColor);
 }
 
 .upgrade_speed .mod_icon,.upgrade_speed .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/speed_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/speed_icon_psd.png");
 	background-color: var(--utilityColor);
 }
 
 .upgrade_energy .mod_icon,.upgrade_energy .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/energy_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/energy_icon_psd.png");
 	background-color: #FFFFFFFF;
 	background-color: var(--energyColor);
 }
 
 .upgrade_ammo .mod_icon,.upgrade_ammo .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/ammo_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/ammo_icon_psd.png");
 	background-color: var(--ammoColor);
 }
 
 .upgrade_fire_rate .mod_icon,.upgrade_fire_rate .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/fire_rate_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/fire_rate_icon_psd.png");
 	background-color: var(--damageColor);
 }
 
 .upgrade_aura .mod_icon,.upgrade_aura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/aura_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/aura_icon_psd.png");
 }
 
 .upgrade_aura_damage .mod_icon,.upgrade_aura_damage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/aura_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/aura_icon_psd.png");
 	background-color: var(--damageAuraColor);
 }
 
 .upgrade_aura_health .mod_icon,.upgrade_aura_health .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/aura_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/aura_icon_psd.png");
 	background-color: var(--armorAuraColor);
 }
 
 .upgrade_aura_energy .mod_icon,.upgrade_aura_energy .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/aura_icon_psd.png");
+	mask-image: url("../panorama/images/upgrades/aura_icon_psd.png");
 	background-color: var(--energyColor);
 }
 
@@ -180,763 +180,763 @@
 }
 
 .baseWeaponry .mod_icon,.baseWeaponry .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/base_weaponry_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/base_weaponry_psd.png");
 }
 
 .clipSize .mod_icon,.clipSize .ability_icon,.clipSize.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/clip_size_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/clip_size_psd.png");
 }
 
 .titanicMagazine .mod_icon,.titanicMagazine .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/titanic_magazine_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/titanic_magazine_psd.png");
 }
 
 .ammoScavenger .mod_icon,.ammoScavenger .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/ammo_scavenger_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/ammo_scavenger_psd.png");
 	background-repeat: no-repeat;
 }
 
 .rapidRounds .mod_icon,.rapidRounds .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/rapid_rounds_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/rapid_rounds_psd.png");
 }
 
 .quickReload .mod_icon,.quickReload .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/quick_reload_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/quick_reload_psd.png");
 }
 
 .electrifiedBullets .mod_icon,.electrifiedBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/electrified_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/electrified_bullets_psd.png");
 }
 
 .galvanicStorm .mod_icon,.galvanicStorm .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/electrified_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/electrified_bullets_psd.png");
 }
 
 .piercingBullets .mod_icon,.piercingBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/piercing_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/piercing_bullets_psd.png");
 }
 
 .stabilizer .mod_icon,.stabilizer .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/stabilizer_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/stabilizer_psd.png");
 }
 
 .highVelocityMag .mod_icon,.highVelocityMag .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/high_velocity_mag_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/high_velocity_mag_psd.png");
 }
 
 .closeRange .mod_icon,.closeRange .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/close_range_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/close_range_psd.png");
 }
 
 .headshotBooster .mod_icon,.headshotBooster .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/headshot_booster_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/headshot_booster_psd.png");
 }
 
 .longRange .mod_icon,.longRange .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/long_range_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/long_range_psd.png");
 }
 
 .reaperRounds .mod_icon,.reaperRounds .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/reaper_rounds_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/reaper_rounds_psd.png");
 }
 
 .pointBlank .mod_icon,.pointBlank .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/point_blank_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/point_blank_psd.png");
 }
 
 .slowingBullets .mod_icon,.slowingBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/slowing_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/slowing_bullets_psd.png");
 }
 
 .inhibitor .mod_icon,.inhibitor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/inhibitor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/inhibitor_psd.png");
 }
 
 .critDamage .mod_icon,.critDamage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/crit_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/crit_damage_psd.png");
 }
 
 .techResistShredder .mod_icon,.techResistShredder .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/tech_resist_shredder_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/tech_resist_shredder_psd.png");
 }
 
 .arcaneEater .mod_icon,.arcaneEater .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/arcane_eater_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/arcane_eater_psd.png");
 }
 
 .enhancedPrecision .mod_icon,.enhancedPrecision .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/enhanced_precision_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/enhanced_precision_psd.png");
 }
 
 .fireRate .mod_icon,.fireRate .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/fire_rate_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/fire_rate_psd.png");
 }
 
 .fireRatePlus .mod_icon,.fireRatePlus .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/fire_rate_plus_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/fire_rate_plus_psd.png");
 }
 
 .fireRatePlusPlus .mod_icon,.fireRatePlusPlus .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/fire_rate_plus_plus_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/fire_rate_plus_plus_psd.png");
 }
 
 .bulletDamageAura .mod_icon,.bulletDamageAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/bullet_damage_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/bullet_damage_aura_psd.png");
 }
 
 .adrenalineRush .mod_icon,.adrenalineRush .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/adrenaline_rush_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/adrenaline_rush_psd.png");
 }
 
 .armorBreakingBullets .mod_icon,.armorBreakingBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/armor_breaking_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/armor_breaking_bullets_psd.png");
 }
 
 .bulletResistShredder .mod_icon,.bulletResistShredder .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/bullet_resist_shredder_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/bullet_resist_shredder_psd.png");
 }
 
 .detentionRounds .mod_icon,.detentionRounds .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/detention_rounds_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/detention_rounds_psd.png");
 }
 
 .bansheeSlugs .mod_icon,.bansheeSlugs .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/banshee_slugs_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/banshee_slugs_psd.png");
 }
 
 .heightAdvantage .mod_icon,.heightAdvantage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/height_advantage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/height_advantage_psd.png");
 }
 
 .empBullets .mod_icon,.empBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/emp_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/emp_bullets_psd.png");
 }
 
 .targetedSilence .mod_icon,.targetedSilence .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/targeted_silence_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/targeted_silence_psd.png");
 }
 
 .toxicBullets .mod_icon,.toxicBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/toxic_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/toxic_bullets_psd.png");
 }
 
 .berserker .mod_icon,.berserker .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/berserker_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/berserker_psd.png");
 }
 
 .fervor .mod_icon,.fervor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/fervor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/fervor_psd.png");
 }
 
 .hollowPoint .mod_icon,.hollowPoint .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/hollow_point_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/hollow_point_psd.png");
 }
 
 .pristineEmblem .mod_icon,.pristineEmblem .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/pristine_emblem_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/pristine_emblem_psd.png");
 }
 
 .longshot .mod_icon,.longshot .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/longshot_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/longshot_psd.png");
 }
 
 .headhunter .mod_icon,.headhunter .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/headhunter_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/headhunter_psd.png");
 }
 
 .siphon_bullets .mod_icon,.siphon_bullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/siphon_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/siphon_bullets_psd.png");
 }
 
 .explosiveBullets .mod_icon,.explosiveBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/explosive_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/explosive_bullets_psd.png");
 }
 
 .medicBullets .mod_icon,.medicBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/medic_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/medic_bullets_psd.png");
 }
 
 .serratedBullets .mod_icon,.serratedBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/serrated_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/serrated_bullets_psd.png");
 }
 
 .hemorrhage .mod_icon,.hemorrhage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/serrated_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/serrated_bullets_psd.png");
 }
 
 .autoReloader .mod_icon,.autoReloader .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/auto_reloader_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/auto_reloader_psd.png");
 }
 
 .ricochet .mod_icon,.ricochet .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/ricochet_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/ricochet_psd.png");
 }
 
 .advancedWeaponry .mod_icon,.advancedWeaponry .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
 }
 
 .surgingPower .mod_icon,.surgingPower .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/vampiric_burst_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/vampiric_burst_psd.png");
 }
 
 .baseTech .mod_icon,.baseTech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/base_tech_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/base_tech_psd.png");
 }
 
 .techPower .mod_icon,.techPower .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
 }
 
 .megaSpirit .mod_icon,.megaSpirit .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/boundless_spirit_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/boundless_spirit_psd.png");
 	background-repeat: no-repeat;
 }
 
 .soaringSpirit .mod_icon,.soaringSpirit .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/soaring_spirit_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/soaring_spirit_psd.png");
 	background-repeat: no-repeat;
 }
 
 .magicStorm .mod_icon,.magicStorm .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/magic_storm_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/magic_storm_psd.png");
 	background-repeat: no-repeat;
 }
 
 .megaCourage .mod_icon,.megaCourage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/mega_courage.svg");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/mega_courage.svg");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .infuser .mod_icon,.infuser .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/infuser_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/infuser_psd.png");
 	background-repeat: no-repeat;
 }
 
 .techOverflow .mod_icon,.techOverflow .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
 }
 
 .magicOverflow .mod_icon,.magicOverflow .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/magic_overflow_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/magic_overflow_psd.png");
 }
 
 .techRange .mod_icon,.techRange .ability_icon,.techRange.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_range_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_range_psd.png");
 }
 
 .spiritualDominion .mod_icon,.spiritualDominion .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/spiritual_dominion_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/spiritual_dominion_psd.png");
 }
 
 .extraCharge .mod_icon,.extraCharge .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/extra_charge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/extra_charge_psd.png");
 }
 
 .chargeMastery .mod_icon,.chargeMastery .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/extra_charge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/extra_charge_psd.png");
 }
 
 .rapidRecharge .mod_icon,.rapidRecharge .ability_icon,.rapidRecharge.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/rapid_recharge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/rapid_recharge_psd.png");
 }
 
 .healthStealingTech .mod_icon,.healthStealingTech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/health_stealing_tech_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/health_stealing_tech_psd.png");
 }
 
 .techVulnerability .mod_icon,.techVulnerability .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_vulnerability_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_vulnerability_psd.png");
 }
 
 .escalatingExposure .mod_icon,.escalatingExposure .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/escalating_exposure_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/escalating_exposure_psd.png");
 }
 
 .healbane .mod_icon,.healbane .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/healbane_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/healbane_psd.png");
 }
 
 .mokrillScorn .mod_icon,.mokrillScorn .ability_icon {
-	mask-image: url("../../panorama/images/hud/abilities/grappler/grappler_regen_psd.png");
+	mask-image: url("../panorama/images/hud/abilities/grappler/grappler_regen_psd.png");
 }
 
 .synthAffliction .mod_icon,.synthAffliction .ability_icon {
-	mask-image: url("../../panorama/images/hud/abilities/synth/synth_affliction_psd.png");
+	mask-image: url("../panorama/images/hud/abilities/synth/synth_affliction_psd.png");
 }
 
 .succor .mod_icon,.succor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/succor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/succor_psd.png");
 }
 
 .blurredVision .mod_icon,.blurredVision .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/blurred_vision_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/blurred_vision_psd.png");
 }
 
 .techDurationExtender .mod_icon,.techDurationExtender .ability_icon,.techDurationExtender.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_duration_extender_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_duration_extender_psd.png");
 }
 
 .slowingTech .mod_icon,.slowingTech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/slowing_tech_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/slowing_tech_psd.png");
 }
 
 .techArmorReductionAura .mod_icon,.techArmorReductionAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_armor_reduction_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_armor_reduction_aura_psd.png");
 }
 
 .empBlast .mod_icon,.empBlast .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/emp_blast_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/emp_blast_psd.png");
 }
 
 .immobilize .mod_icon,.immobilize .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/immobilize_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/immobilize_psd.png");
 }
 
 .healPreventer .mod_icon,.healPreventer .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/heal_preventer_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/heal_preventer_psd.png");
 }
 
 .medicBeam .mod_icon,.medicBeam .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/medic_beam_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/medic_beam_psd.png");
 }
 
 .quantumChimaera .mod_icon,.quantumChimaera .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/quantum_chimaera_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/quantum_chimaera_psd.png");
 }
 
 .clarity .mod_icon,.clarity .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/clarity_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/clarity_psd.png");
 }
 
 .techImbuedBullets .mod_icon,.techImbuedBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_imbued_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_imbued_bullets_psd.png");
 }
 
 .techArmorPulse .mod_icon,.techArmorPulse .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_shield_pulse_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_shield_pulse_psd.png");
 }
 
 .tormentAura .mod_icon,.tormentAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/torment_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/torment_aura_psd.png");
 }
 
 .knockdown .mod_icon,.knockdown .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/knockdown_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/knockdown_psd.png");
 }
 
 .phantomStrike .mod_icon,.phantomStrike .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/phantom_strike_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/phantom_strike_psd.png");
 }
 
 .warpStone .mod_icon,.warpStone .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/warp_stone_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/warp_stone_psd.png");
 }
 
 .areaImmobilize .mod_icon,.areaImmobilize .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/area_immobilize_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/area_immobilize_psd.png");
 }
 
 .areaImmobilize .mod_icon,.areaImmobilize .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/area_immobilize_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/area_immobilize_psd.png");
 }
 
 .abilityRefresher .mod_icon,.abilityRefresher .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/refresher_module_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/refresher_module_psd.png");
 }
 
 .powerShard .mod_icon,.powerShard .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/echo_shard_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/echo_shard_psd.png");
 }
 
 .imbuedAbility .mod_icon,.imbuedAbility .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/tech_damage_psd.png");
 }
 
 .durationExtender .mod_icon,.durationExtender .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/duration_extender_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/duration_extender_psd.png");
 }
 
 .superiorDuration .mod_icon,.superiorDuration .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/arcane_persistance_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/arcane_persistance_psd.png");
 }
 
 .advancedTech .mod_icon,.advancedTech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/advanced_tech_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/advanced_tech_psd.png");
 }
 
 .glitch .mod_icon,.glitch .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/glitch_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/glitch_psd.png");
 }
 
 .baseArmor .mod_icon,.baseArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/base_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/base_armor_psd.png");
 }
 
 .bulletArmor .mod_icon,.bulletArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_armor_psd.png");
 }
 
 .improvedBulletArmor .mod_icon,.improvedBulletArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/improved_bullet_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/improved_bullet_armor_psd.png");
 }
 
 .bulletArmorPlus .mod_icon,.bulletArmorPlus .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_armor_plus_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_armor_plus_psd.png");
 }
 
 .techArmor .mod_icon,.techArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/tech_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/tech_armor_psd.png");
 }
 
 .techDefender .mod_icon,.techDefender .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/tech_defender_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/tech_defender_psd.png");
 }
 
 .techPurge .mod_icon,.techPurge .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/tech_purge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/tech_purge_psd.png");
 }
 
 .healthRegen .mod_icon,.healthRegen .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/health_regen_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/health_regen_psd.png");
 }
 
 .resilience .mod_icon,.resilience .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/resilience_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/resilience_psd.png");
 }
 
 .endurance .mod_icon,.endurance .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/endurance_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/endurance_psd.png");
 }
 
 .healthSstealingBullets .mod_icon,.healthSstealingBullets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/health_stealing_bullets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/health_stealing_bullets_psd.png");
 }
 
 .bulletArmorPulse .mod_icon,.bulletArmorPulse .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_armor_pulse_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_armor_pulse_psd.png");
 }
 
 .bulletShield .mod_icon,.bulletShield .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_shield_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_shield_psd.png");
 }
 
 .metalSkin .mod_icon,.metalSkin .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/metal_skin_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/metal_skin_psd.png");
 }
 
 .meleeDamage .mod_icon,.meleeDamage .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/melee_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/melee_damage_psd.png");
 }
 
 .meleeElectrified .mod_icon,.meleeElectrified .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/melee_electrified_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/melee_electrified_psd.png");
 }
 
 .meleeKnockdown .mod_icon,.meleeKnockdown .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/melee_knockdown_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/melee_knockdown_psd.png");
 }
 
 .boxingGlove .mod_icon,.boxingGlove .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/boxing_glove_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/boxing_glove_psd.png");
 }
 
 .acolytesGlove .mod_icon,.acolytesGlove .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/acolytes_glove_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/acolytes_glove_psd.png");
 }
 
 .meleeCharge .mod_icon,.meleeCharge .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/melee_charge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/melee_charge_psd.png");
 }
 
 .charmedWraps .mod_icon,.charmedWraps .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/charmed_wraps_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/charmed_wraps_psd.png");
 }
 
 .meleeDeflector .mod_icon,.meleeDeflector .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/melee_deflector_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/melee_deflector_psd.png");
 }
 
 .doubleJump .mod_icon,.doubleJump .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/double_jump_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/double_jump_psd.png");
 }
 
 .rollEvasion .mod_icon,.rollEvasion .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/roll_evasion_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/roll_evasion_psd.png");
 }
 
 .healthRegenAura .mod_icon,.healthRegenAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/health_regen_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/health_regen_aura_psd.png");
 }
 
 .radarDrone .mod_icon,.radarDrone .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/radar_drone_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/radar_drone_psd.png");
 }
 
 .debuffReducer .mod_icon,.debuffReducer .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/debuff_reducer_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/debuff_reducer_psd.png");
 }
 
 .debuffRemover .mod_icon,.debuffRemover .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/debuff_remover_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/debuff_remover_psd.png");
 }
 
 .portableRejuv .mod_icon,.portableRejuv .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/rebirth_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/rebirth_psd.png");
 }
 
 .overdrive .mod_icon,.overdrive .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/overdrive_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/overdrive_psd.png");
 }
 
 .healingBooster .mod_icon,.healingBooster .ability_icon,.healingBooster.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/healing_booster_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/healing_booster_psd.png");
 }
 
 .leech .mod_icon,.leech .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/leech_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/leech_psd.png");
 }
 
 .bulletDeflector .mod_icon,.bulletDeflector .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_deflector_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_deflector_psd.png");
 }
 
 .weaponJammer .mod_icon,.weaponJammer .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/weapon_jammer_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/weapon_jammer_psd.png");
 }
 
 .bulletArmorReductionAura .mod_icon,.bulletArmorReductionAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_armor_reduction_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_armor_reduction_aura_psd.png");
 }
 
 .camouflageSuit .mod_icon,.camouflageSuit .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/camouflage_suit_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/camouflage_suit_psd.png");
 }
 
 .lastStand .mod_icon,.lastStand .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/return_fire_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/return_fire_psd.png");
 }
 
 .advancedArmor .mod_icon,.advancedArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/advanced_armor_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/advanced_armor_psd.png");
 }
 
 .regenerativeArmor .mod_icon,.regenerativeArmor .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/last_stand_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/last_stand_psd.png");
 }
 
 .baseUtility .mod_icon,.baseUtility .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/base_utility_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/base_utility_psd.png");
 }
 
 .ziplineSpeed .mod_icon,.ziplineSpeed .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/zipline_speed_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/zipline_speed_psd.png");
 }
 
 .ziplineMastery .mod_icon,.ziplineMastery .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/zipline_mastery_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/zipline_mastery_psd.png");
 }
 
 .sprintBooster .mod_icon,.sprintBooster .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/sprint_booster_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/sprint_booster_psd.png");
 }
 
 .improvedCourage .mod_icon,.improvedCourage .ability_icon {
-	mask-image: url("../../panorama/images/hud/core/icon_courage.svg");
+	mask-image: url("../panorama/images/hud/core/icon_courage.svg");
 }
 
 .superiorStamina .mod_icon,.superiorStamina .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/superior_stamina_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/superior_stamina_psd.png");
 }
 
 .cardioCalibrator .mod_icon,.cardioCalibrator .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/cardio_calibrator_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/cardio_calibrator_psd.png");
 }
 
 .unstoppable .mod_icon,.unstoppable .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/unstoppable_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/unstoppable_psd.png");
 }
 
 .colossus .mod_icon,.colossus .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/colossus_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/colossus_psd.png");
 }
 
 .improvedStamina .mod_icon,.improvedStamina .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/improved_stamina_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/improved_stamina_psd.png");
 }
 
 .controlledFall .mod_icon,.controlledFall .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/controlled_fall_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/controlled_fall_psd.png");
 }
 
 .cloakingDevice .mod_icon,.cloakingDevice .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/cloaking_device_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/cloaking_device_psd.png");
 }
 
 .fastReload .mod_icon,.fastReload .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/fast_reload_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/fast_reload_psd.png");
 }
 
 .preditorVision .mod_icon,.preditorVision .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/preditor_vision_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/preditor_vision_psd.png");
 }
 
 .fireRateAura .mod_icon,.fireRateAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/fire_rate_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/fire_rate_aura_psd.png");
 }
 
 .techArmorAura .mod_icon,.techArmorAura .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/tech_armor_aura_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/tech_armor_aura_psd.png");
 }
 
 .springyBoots .mod_icon,.springyBoots .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/springy_boots_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/springy_boots_psd.png");
 }
 
 .rocketBooster .mod_icon,.rocketBooster .ability_icon {
-	mask-image: url("../../panorama/images/hud/abilities/lash/lash_death_slam_psd.png");
+	mask-image: url("../panorama/images/hud/abilities/lash/lash_death_slam_psd.png");
 }
 
 .magicCarpet .mod_icon,.magicCarpet .ability_icon {
-	mask-image: url("../../panorama/images/hud/abilities/kelvin/ice_path_psd.png");
+	mask-image: url("../panorama/images/hud/abilities/kelvin/ice_path_psd.png");
 }
 
 .deployableBulletShield .mod_icon,.deployableBulletShield .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/deployable_bullet_shield_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/deployable_bullet_shield_psd.png");
 }
 
 .healthNova .mod_icon,.healthNova .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/health_nova_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/health_nova_psd.png");
 }
 
 .restorativeLocket .mod_icon,.restorativeLocket .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/restorative_locket_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/restorative_locket_psd.png");
 }
 
 .stimPak .mod_icon,.stimPak .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/stimpak_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/stimpak_psd.png");
 }
 
 .savior .mod_icon,.savior .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/savior_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/savior_psd.png");
 }
 
 .techGrenade .mod_icon,.techGrenade .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/thermal_detonator_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/thermal_detonator_psd.png");
 }
 
 .fleetfootBoots .mod_icon,.fleetfootBoots .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/fleetfoot_boots_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/fleetfoot_boots_psd.png");
 }
 
 .kineticSash .mod_icon,.kineticSash .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/kinetic_sash_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/kinetic_sash_psd.png");
 }
 
 .activeReload .mod_icon,.activeReload .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/deployable_bullet_shield_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/deployable_bullet_shield_psd.png");
 }
 
 .empWave .mod_icon,.empWave .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/emp_wave_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/emp_wave_psd.png");
 }
 
 .forceBlast .mod_icon,.forceBlast .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/force_blast_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/force_blast_psd.png");
 }
 
 .iceBlast .mod_icon,.iceBlast .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/ice_blast_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/ice_blast_psd.png");
 }
 
 .stasis .mod_icon,.stasis .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/stasis_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/stasis_psd.png");
 }
 
 .shiftingShroud .mod_icon,.shiftingShroud .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/shifting_shroud_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/shifting_shroud_psd.png");
 }
 
 .lifeLine .mod_icon,.lifeLine .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/life_line_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/life_line_psd.png");
 }
 
 .smoke .mod_icon,.smoke .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/smoke_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/smoke_psd.png");
 }
 
 .advancedRecharge .mod_icon,.advancedRecharge .ability_icon,.advancedRecharge.AdjustedStatAbility {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/advanced_recharge_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/advanced_recharge_psd.png");
 }
 
 .spiritualFlow .mod_icon,.spiritualFlow .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/spiritual_flow_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/spiritual_flow_psd.png");
 }
 
 .magicBurst .mod_icon,.magicBurst .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/magic_burst_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/magic_burst_psd.png");
 }
 
 .magicShock .mod_icon,.magicShock .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/magic_shock_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/magic_shock_psd.png");
 }
 
 .rupture .mod_icon,.rupture .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/rupture_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/rupture_psd.png");
 }
 
 .revitalizer .mod_icon,.revitalizer .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/revitalizer_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/revitalizer_psd.png");
 }
 
 .disarm .mod_icon,.disarm .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/disarm_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/disarm_psd.png");
 }
 
 .weaponEater .mod_icon,.weaponEater .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
 }
 
 .leveler .mod_icon,.leveler .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/advanced_weaponry_psd.png");
 }
 
 .magicReverb .mod_icon,.magicReverb .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/magic_reverb_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/magic_reverb_psd.png");
 }
 
 .arcaneMedallion .mod_icon,.arcaneMedallion .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_tech/arcane_medallion_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_tech/arcane_medallion_psd.png");
 }
 
 .lifestrikeGauntlets .mod_icon,.lifestrikeGauntlets .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/lifestrike_gauntlets_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/lifestrike_gauntlets_psd.png");
 }
 
 .glassCannon .mod_icon,.glassCannon .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/glass_cannon_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/glass_cannon_psd.png");
 }
 
 .intensifyingClip .mod_icon,.intensifyingClip .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/auto_reloader_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/auto_reloader_psd.png");
 }
 
 .reinforcingCasings .mod_icon,.reinforcingCasings .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/bullet_armor_plus_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/bullet_armor_plus_psd.png");
 }
 
 .critshot .mod_icon,.critshot .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_weapon/crit_damage_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_weapon/crit_damage_psd.png");
 }
 
 .vexBarrier .mod_icon,.vexBarrier .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_armor/last_stand_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_armor/last_stand_psd.png");
 }
 
 .veilWalker .mod_icon,.veilWalker .ability_icon {
-	mask-image: url("../../panorama/images/upgrades/mods_utility/veil_walker_psd.png");
+	mask-image: url("../panorama/images/upgrades/mods_utility/veil_walker_psd.png");
 }
 
 AbilitySlotIcon CitadelHudAbilityUpgradePips {

@@ -1,33 +1,33 @@
 @font-face {
   font-family: "Retail";
-  src: url("../../fonts/Retail-Bold.woff") format("woff");
+  src: url("../fonts/Retail-Bold.woff") format("woff");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Retail Text";
-  src: url("../../fonts/Retail_Text-Regular.woff") format("woff");
+  src: url("../fonts/Retail_Text-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Swear Text Demo";
-  src: url("../../fonts/SwearText-Regular.woff2") format("woff2");
+  src: url("../fonts/SwearText-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Swear Text Demo";
-  src: url("../../fonts/SwearBanner-Bold.woff2") format("woff2");
+  src: url("../fonts/SwearBanner-Bold.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Forevs";
-  src: url("../../fonts/Forevs-Regular.woff") format("woff");
+  src: url("../fonts/Forevs-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Forevs";
-  src: url("../../fonts/Forevs-Bold.woff") format("woff");
+  src: url("../fonts/Forevs-Bold.woff") format("woff");
   font-weight: 600;
 }
 
@@ -578,7 +578,7 @@ progress {
 	width: 15px;
 	mask-size: contain;
 	mask-repeat: no-repeat;
-	mask-image: url("../../panorama/images/hud/icons/icon_soul.svg");
+	mask-image: url("../panorama/images/hud/icons/icon_soul.svg");
 }
 
 #InfoIcon {
@@ -586,7 +586,7 @@ progress {
 	height: 24px;
 	width: 24px;
 	background-size: 100% 100%;
-	background-image: url("../../panorama/images/control_icons/info_icon_png.png");
+	background-image: url("../panorama/images/control_icons/info_icon_png.png");
 	vertical-align: top;
 	horizontal-align: left;
 	z-index: 3;
@@ -818,7 +818,7 @@ TextEntry.ThinTextEntry {
 
 DropDown,CitadelSettingsEnumDropDown {
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #292e2e ), to( #191e1e ) );
-	background-image: url("../../panorama/images/control_icons/arrow_dropdown_png.png");
+	background-image: url("../panorama/images/control_icons/arrow_dropdown_png.png");
 	background-repeat: no-repeat;
 	background-position: right 38px 35%;
 	background-size: 32px 32px;
@@ -846,7 +846,7 @@ DropDown:focus .TickBox,CitadelSettingsEnumDropDown:focus .TickBox {
 DropDown:disabled {
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #292e2e ), to( #191e1e ) );
 	border: 2px solid #3b414266;
-	background-image: url("../../panorama/images/control_icons/arrow_dropdown_disabled_png.png");
+	background-image: url("../panorama/images/control_icons/arrow_dropdown_disabled_png.png");
 }
 
 DropDown.DropDownMenuVisible:focus,CitadelSettingsEnumDropDown.DropDownMenuVisible:focus {
