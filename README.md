@@ -21,6 +21,6 @@ Once these resources are extracted manual analysis of the XML and CSS files was 
 
 ## Pages
 
-- [profile](niamu.github.io/deadlock-pages/profile/)
-- [post game](niamu.github.io/deadlock-pages/post_game/)
-- [shop](niamu.github.io/deadlock-pages/shop/)
+- [profile](https://niamu.github.io/deadlock-pages/pages/profile/)
+- [post game](https://niamu.github.io/deadlock-pages/pages/post_game/)
+- [shop](https://niamu.github.io/deadlock-pages/pages/shop/)

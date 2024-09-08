@@ -200,7 +200,7 @@
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("/panorama/images/hud/core/icon_fortitude_shield.svg");
+	background-image: url("../../panorama/images/hud/core/icon_fortitude_shield.svg");
 	background-img-opacity: 0.9;
 	border-radius: 2px 0px 0px 0px;
 	visibility: collapse;
@@ -740,7 +740,7 @@
 #componentOwnedIcon {
 	width: 16px;
 	height: 16px;
-	background-image: url("/panorama/images/icons/icon_checkmark.svg");
+	background-image: url("../../panorama/images/icons/icon_checkmark.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	transform: translateX(0px) translateY(3px);

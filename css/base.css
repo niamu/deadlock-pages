@@ -1,33 +1,33 @@
 @font-face {
   font-family: "Retail";
-  src: url("/fonts/Retail-Bold.woff") format("woff");
+  src: url("../../fonts/Retail-Bold.woff") format("woff");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Retail Text";
-  src: url("/fonts/Retail_Text-Regular.woff") format("woff");
+  src: url("../../fonts/Retail_Text-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Swear Text Demo";
-  src: url("/fonts/SwearText-Regular.woff2") format("woff2");
+  src: url("../../fonts/SwearText-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Swear Text Demo";
-  src: url("/fonts/SwearBanner-Bold.woff2") format("woff2");
+  src: url("../../fonts/SwearBanner-Bold.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Forevs";
-  src: url("/fonts/Forevs-Regular.woff") format("woff");
+  src: url("../../fonts/Forevs-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Forevs";
-  src: url("/fonts/Forevs-Bold.woff") format("woff");
+  src: url("../../fonts/Forevs-Bold.woff") format("woff");
   font-weight: 600;
 }
 
@@ -352,139 +352,6 @@ progress {
 	opacity: 0.6;
 }
 
-.PrimaryButton {
-	background-size: cover;
-	border: 15px solid #C6C6C600;
-	border-image: url("panorama/images/global/btn_primary_frame.svg");
-	border-image-slice: 20px fill;
-	border-image-width: 20;
-	border-image-outset: 8px;
-	border-image-repeat: repeat;
-	padding: 0px 10px;
-	height: 70px;
-	margin: 8px;
-	transition-property: background-color, wash-color;
-	transition-duration: 0.1s;
-	transition-timing-function: linear;
-}
-
-.PrimaryButton Label {
-	font-size: 34px;
-	color: offBlack;
-	font-family: serif;
-	font-weight: bold;
-	horizontal-align: center;
-	vertical-align: middle;
-	margin-bottom: 2px;
-	text-align: center;
-	horizontal-align: center;
-	font-weight: bold;
-}
-
-.PrimaryButton:enabled:hover {
-	wash-color: var(--offWhite);
-}
-
-.PrimaryButton:disabled {
-	opacity: 0.3;
-	brightness: 0.3;
-}
-
-.PrimaryButton:active Label {
-	transform: translateY(1px);
-}
-
-.PrimaryButton:active {
-	wash-color: #666;
-}
-
-.PrimaryButton.Activated {
-	sound: "ui_quit_menu_fadeout";
-}
-
-.PrimaryButton.dark {
-	border: 15px solid offBlack&00;
-	border-image: url("panorama/images/global/btn_primary_frame_drk.svg");
-}
-
-.PrimaryButton.dark Label {
-	color: silvered;
-}
-
-.PrimaryButton:disabled {
-	opacity: 0.3;
-	brightness: 0.3;
-}
-
-.PrimaryButton.dark:hover Label {
-	font-style: italic;
-}
-
-.PrimaryButton:active {
-	wash-color: #666;
-}
-
-.PrimaryButton.Activated {
-	sound: "ui_quit_menu_fadeout";
-}
-
-.SecondaryButton {
-	border: 2px solid silvered&50;
-	padding: 0px 10px;
-	border-radius: 50px;
-	padding: 6px 15px;
-	margin: 8px;
-	vertical-align: middle;
-	transition-property: background-color, wash-color, border;
-	transition-duration: 0.1s;
-	transition-timing-function: linear;
-}
-
-.SecondaryButton Label {
-	font-size: 18px;
-	color: silvered&90;
-	font-weight: semi-bold;
-	horizontal-align: center;
-	vertical-align: middle;
-	margin-bottom: 2px;
-	text-align: center;
-	horizontal-align: center;
-	text-overflow: shrink;
-	transition-property: color, wash-color;
-	transition-duration: 0.1s;
-	transition-timing-function: linear;
-}
-
-.SecondaryButton:enabled:hover {
-	wash-color: var(--offWhite)&60;
-	background-color: var(--offWhite)&60;
-}
-
-.SecondaryButton:enabled:hover Label {
-	color: offBlack;
-}
-
-.SecondaryButton:disabled {
-	opacity: 0.3;
-	brightness: 0.3;
-}
-
-.SecondaryButton:active Label {
-	transform: translateY(1px);
-}
-
-.SecondaryButton:active {
-	wash-color: #666;
-}
-
-.SecondaryButton.Activated {
-	sound: "ui_quit_menu_fadeout";
-}
-
-.SecondaryButton.hasIcon {
-	flow-children: right;
-}
-
 .buttonIcon {
 	margin-right: 5px;
 	width: 15px;
@@ -711,7 +578,7 @@ progress {
 	width: 15px;
 	mask-size: contain;
 	mask-repeat: no-repeat;
-	mask-image: url("panorama/images/hud/icons/icon_soul.svg");
+	mask-image: url("../../panorama/images/hud/icons/icon_soul.svg");
 }
 
 #InfoIcon {
@@ -719,7 +586,7 @@ progress {
 	height: 24px;
 	width: 24px;
 	background-size: 100% 100%;
-	background-image: url("panorama/images/control_icons/info_icon_png.png");
+	background-image: url("../../panorama/images/control_icons/info_icon_png.png");
 	vertical-align: top;
 	horizontal-align: left;
 	z-index: 3;
@@ -741,7 +608,7 @@ progress {
 	horizontal-align: center;
 }
 
-@keyframes 'ProbablyUnlocalizedAnimation' {
+@keyframes ProbablyUnlocalizedAnimation {
 	0%
 	{
 		pre-transform-scale2d: 0.95;
@@ -951,7 +818,7 @@ TextEntry.ThinTextEntry {
 
 DropDown,CitadelSettingsEnumDropDown {
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #292e2e ), to( #191e1e ) );
-	background-image: url("panorama/images/control_icons/arrow_dropdown_png.png");
+	background-image: url("../../panorama/images/control_icons/arrow_dropdown_png.png");
 	background-repeat: no-repeat;
 	background-position: right 38px 35%;
 	background-size: 32px 32px;
@@ -979,7 +846,7 @@ DropDown:focus .TickBox,CitadelSettingsEnumDropDown:focus .TickBox {
 DropDown:disabled {
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #292e2e ), to( #191e1e ) );
 	border: 2px solid #3b414266;
-	background-image: url("panorama/images/control_icons/arrow_dropdown_disabled_png.png");
+	background-image: url("../../panorama/images/control_icons/arrow_dropdown_disabled_png.png");
 }
 
 DropDown.DropDownMenuVisible:focus,CitadelSettingsEnumDropDown.DropDownMenuVisible:focus {
